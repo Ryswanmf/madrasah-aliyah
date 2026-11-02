@@ -1,0 +1,25 @@
+{
+  "name": "MA Darun Najah Sambikarto",
+  "short_name": "MA Darun Najah",
+  "description": "Website Resmi Madrasah Aliyah & Pondok Pesantren Darun Najah Sambikarto, Sekampung, Lampung Timur.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
