@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'PPDB Online 2026/2027 • Pendaftaran Santri Baru MA Darun Najah Sambikarto')
+@section('title', 'PPDB Online 2026/2027 • Penerimaan Peserta Didik Baru Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- PPDB Dedicated Page Container -->
@@ -33,12 +33,12 @@
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
             Penerimaan Peserta Didik Baru <br class="hidden sm:inline">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400">
-              MA Darun Najah Sambikarto
+              Madrasah Aliyah Darun Najah
             </span>
           </h1>
 
           <p class="text-emerald-100/90 text-sm sm:text-base leading-relaxed max-w-2xl">
-            Mari bergabung menjadi generasi santri yang berakhlakul karimah, berwawasan ilmiah, hafal Al-Qur'an, dan siap menghadapi tantangan zaman. Pendaftaran dibuka secara online & transparan.
+            Mari bergabung menjadi generasi peserta didik berakhlakul karimah, berwawasan ilmiah, unggul dalam keagamaan, dan siap menghadapi tantangan global. Pendaftaran dibuka secara online & transparan.
           </p>
 
           <!-- Quick Jump Buttons -->
@@ -55,7 +55,7 @@
               <i class="fa-solid fa-magnifying-glass"></i>
               <span>Cek Status Pendaftaran</span>
             </a>
-            <a href="{{ $contact ? $contact->getWaLink('Halo Panitia PPDB MA Darun Najah Sambikarto, saya ingin bertanya tentang pendaftaran santri baru.') : 'https://wa.me/6285658973426' }}" 
+            <a href="{{ $contact ? $contact->getWaLink('Halo Panitia PPDB Madrasah Aliyah Darun Najah, saya ingin bertanya tentang pendaftaran peserta didik baru.') : 'https://wa.me/6285658973426' }}" 
                target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-emerald-100 font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-lg backdrop-blur-xs transition-colors">
               <i class="fa-brands fa-whatsapp text-sm text-emerald-300"></i>
@@ -79,8 +79,8 @@
                 <span class="font-bold text-white">IPA & Keagamaan</span>
               </div>
               <div class="flex justify-between items-center text-emerald-100">
-                <span>Pondok Pesantren:</span>
-                <span class="font-bold text-amber-300">Mukim / Non-Mukim</span>
+                <span>Pilihan Asrama:</span>
+                <span class="font-bold text-amber-300">Asrama / Reguler</span>
               </div>
               <div class="flex justify-between items-center text-emerald-100">
                 <span>Sekretariat:</span>
@@ -88,7 +88,7 @@
               </div>
             </div>
             <div class="pt-2 border-t border-white/10 text-[11px] text-emerald-200/90 leading-relaxed">
-              *Tersedia program <strong>Beasiswa Tahfidz Al-Qur'an</strong> dan <strong>Keringanan Santri Yatim/Dhuafa</strong>.
+              *Tersedia program <strong>Beasiswa Tahfidz Al-Qur'an</strong> dan <strong>Keringanan Siswa Berprestasi/Yatim/Dhuafa</strong>.
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@
           Jadwal Gelombang Pendaftaran
         </h2>
         <p class="text-xs sm:text-sm text-slate-600 mt-2">
-          Pilihlah gelombang pendaftaran yang sesuai untuk mendapatkan kuota kamar asrama terbaik.
+          Pilihlah gelombang pendaftaran yang sesuai untuk memastikan ketersediaan kuota peserta didik baru.
         </p>
       </div>
 
@@ -122,7 +122,7 @@
           <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-emerald-100">
             <li class="flex items-start gap-2">
               <i class="fa-solid fa-check text-emerald-600 mt-0.5 text-[11px]"></i>
-              <span>Prioritas pemilihan kamar asrama santri</span>
+              <span>Prioritas pemilihan kamar asrama siswa/i</span>
             </li>
             <li class="flex items-start gap-2">
               <i class="fa-solid fa-check text-emerald-600 mt-0.5 text-[11px]"></i>
@@ -176,7 +176,7 @@
             </li>
             <li class="flex items-start gap-2">
               <i class="fa-solid fa-star text-amber-400 mt-0.5 text-[11px]"></i>
-              <span><strong>Santri Yatim:</strong> Bantuan pendidikan khusus</span>
+              <span><strong>Siswa/i Yatim:</strong> Bantuan pendidikan khusus</span>
             </li>
           </ul>
         </div>
@@ -193,7 +193,7 @@
         <!-- Left: Alur 4 Langkah (7 cols) -->
         <div class="lg:col-span-7 bg-white p-6 sm:p-8 border border-slate-200 rounded-2xl shadow-sm space-y-6">
           <div class="border-b border-slate-100 pb-4">
-            <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider block mb-1">Panduan Calon Santri</span>
+            <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider block mb-1">Panduan Calon Siswa/i</span>
             <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">4 Langkah Alur Pendaftaran</h2>
           </div>
 
@@ -206,7 +206,7 @@
               <div class="flex-1">
                 <h3 class="text-sm sm:text-base font-bold text-slate-900">Pendaftaran Online</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Isi formulir online di halaman ini dengan data santri yang valid (Nama, NISN, Asal Sekolah, Data Wali, dan Pilihan Program).
+                  Isi formulir online di halaman ini dengan data calon siswa/i yang valid (Nama, NISN, Asal Sekolah, Data Wali, dan Pilihan Program).
                 </p>
               </div>
             </div>
@@ -232,7 +232,7 @@
               <div class="flex-1">
                 <h3 class="text-sm sm:text-base font-bold text-slate-900">Verifikasi Berkas & Observasi</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Wali santri menyerahkan berkas fisik ke sekretariat madrasah atau via pos, disertai tes ringan observasi baca Al-Qur'an bagi calon santri.
+                  Orang tua / wali murid menyerahkan berkas fisik ke sekretariat madrasah atau via pos, disertai tes pemetaan baca Al-Qur'an bagi calon siswa/i.
                 </p>
               </div>
             </div>
@@ -245,7 +245,7 @@
               <div class="flex-1">
                 <h3 class="text-sm sm:text-base font-bold text-slate-900">Pengumuman & Daftar Ulang</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Cek status kelulusan secara online pada fitur Cek Status. Santri yang dinyatakan diterima dapat melakukan daftar ulang dan pengukuran seragam.
+                  Cek status kelulusan secara online pada fitur Cek Status. Siswa/i yang dinyatakan diterima dapat melakukan daftar ulang dan pengukuran seragam.
                 </p>
               </div>
             </div>
@@ -270,7 +270,7 @@
               </li>
               <li class="flex items-start gap-2.5">
                 <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-xs shrink-0"></i>
-                <span>Fotokopi Akta Kelahiran calon santri</span>
+                <span>Fotokopi Akta Kelahiran calon siswa/i</span>
               </li>
               <li class="flex items-start gap-2.5">
                 <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-xs shrink-0"></i>
@@ -293,7 +293,7 @@
               <i class="fa-solid fa-school text-emerald-700"></i>
               <span>Sekretariat Panitia PPDB</span>
             </div>
-            <p>Gedung Kantor MA Darun Najah Sambikarto, Sekampung, Lampung Timur.</p>
+            <p>Gedung Kantor Madrasah Aliyah Darun Najah, Sambikarto, Sekampung, Lampung Timur.</p>
             <p class="text-slate-500"><strong>Jam Layanan:</strong> Setiap Hari (08.00 - 15.00 WIB)</p>
           </div>
         </div>
@@ -335,7 +335,7 @@
             <div class="flex-1">
               <h3 class="text-lg font-bold text-emerald-950">Alhamdulillah, Pendaftaran Berhasil Dikirim!</h3>
               <p class="text-xs sm:text-sm text-emerald-800 mt-1">
-                Data calon santri an. <strong>{{ session('registration')->full_name }}</strong> telah tersimpan di sistem PPDB MA Darun Najah Sambikarto.
+                Data calon siswa/i an. <strong>{{ session('registration')->full_name }}</strong> telah tersimpan di sistem PPDB Madrasah Aliyah Darun Najah.
               </p>
               
               <div class="bg-white p-4 border border-emerald-300 rounded-xl mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -385,7 +385,7 @@
                 <strong class="font-mono text-emerald-800 text-base font-extrabold">{{ $reg->registration_number }}</strong>
               </div>
               <div class="flex justify-between">
-                <span class="text-slate-500">Nama Santri:</span>
+                <span class="text-slate-500">Nama Calon Siswa:</span>
                 <strong class="text-slate-800">{{ $reg->full_name }}</strong>
               </div>
               <div class="flex justify-between">
@@ -397,8 +397,8 @@
                 <span class="font-medium text-slate-800">{{ $reg->program_choice }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-slate-500">Status Asrama:</span>
-                <span>{{ $reg->dormitory_choice ? 'Santri Mukim (Pondok)' : 'Santri Non-Mukim (Reguler)' }}</span>
+                <span class="text-slate-500">Status Tempat Tinggal:</span>
+                <span>{{ $reg->dormitory_choice ? 'Tinggal di Asrama (Bermukim)' : 'Siswa Reguler (Pulang-Pergi)' }}</span>
               </div>
               <div class="flex justify-between items-center pt-3 border-t border-slate-200">
                 <span class="text-slate-500 font-semibold">Status Pendaftaran:</span>
@@ -448,7 +448,7 @@
             Pendaftaran Online Sedang Ditutup
           </h2>
           <p class="text-sm text-slate-600 max-w-lg mx-auto leading-relaxed">
-            {{ $ppdbSetting->closed_message ?: 'Mohon maaf, pendaftaran santri baru saat ini sedang ditutup atau kuota pendaftaran telah terpenuhi. Silakan hubungi sekretariat madrasah untuk informasi gelombang berikutnya.' }}
+            {{ $ppdbSetting->closed_message ?: 'Mohon maaf, pendaftaran peserta didik baru saat ini sedang ditutup atau kuota pendaftaran telah terpenuhi. Silakan hubungi sekretariat madrasah untuk informasi gelombang berikutnya.' }}
           </p>
           <div class="pt-4">
             <a href="{{ $ppdbSetting ? $ppdbSetting->wa_link : ($contact ? $contact->getWaLink() : 'https://wa.me/6285658973426') }}" target="_blank" rel="noopener noreferrer"
@@ -462,28 +462,28 @@
         <div class="bg-white p-6 sm:p-10 border-t-4 border-amber-500 border-x border-b border-slate-200 rounded-2xl shadow-lg">
           <div class="border-b border-slate-100 pb-5 mb-8">
             <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-              Formulir Pendaftaran Santri Baru Online
+              Formulir Pendaftaran Peserta Didik Baru Online
             </h2>
             <p class="text-xs sm:text-sm text-slate-500 mt-1">
-              Silakan lengkapi biodata calon santri di bawah ini dengan data yang benar dan nomor WhatsApp aktif.
+              Silakan lengkapi biodata calon siswa di bawah ini dengan data yang benar dan nomor WhatsApp aktif.
             </p>
           </div>
 
           <form action="{{ route('ppdb.store') }}" method="POST" class="space-y-6">
             @csrf
 
-            <!-- Section 1: Data Santri -->
+            <!-- Section 1: Data Siswa -->
             <div>
               <h3 class="text-xs font-bold text-emerald-800 uppercase tracking-wider mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
                 <i class="fa-solid fa-user-graduate"></i>
-                <span>A. Biodata Calon Santri</span>
+                <span>A. Biodata Calon Siswa</span>
               </h3>
 
               <div class="space-y-4">
                 <!-- Nama Lengkap -->
                 <div>
                   <label for="full_name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                    Nama Lengkap Calon Santri <span class="text-red-500">*</span>
+                    Nama Lengkap Calon Siswa <span class="text-red-500">*</span>
                   </label>
                   <input type="text" name="full_name" id="full_name" required placeholder="Sesuai Akta Kelahiran / Ijazah"
                          value="{{ old('full_name') }}"
@@ -511,12 +511,12 @@
                       <label class="flex items-center gap-2 cursor-pointer text-xs sm:text-sm text-slate-700">
                         <input type="radio" name="gender" value="L" {{ old('gender', 'L') === 'L' ? 'checked' : '' }}
                                class="text-emerald-700 focus:ring-emerald-700">
-                        <span>Laki-laki (Santri Putra)</span>
+                        <span>Laki-laki</span>
                       </label>
                       <label class="flex items-center gap-2 cursor-pointer text-xs sm:text-sm text-slate-700">
                         <input type="radio" name="gender" value="P" {{ old('gender') === 'P' ? 'checked' : '' }}
                                class="text-emerald-700 focus:ring-emerald-700">
-                        <span>Perempuan (Santri Putri)</span>
+                        <span>Perempuan</span>
                       </label>
                     </div>
                     @error('gender') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
@@ -572,7 +572,7 @@
                   <label for="parent_name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                     Nama Orang Tua / Wali <span class="text-red-500">*</span>
                   </label>
-                  <input type="text" name="parent_name" id="parent_name" required placeholder="Nama Ayah / Ibu / Wali Santri"
+                  <input type="text" name="parent_name" id="parent_name" required placeholder="Nama Ayah / Ibu / Wali Murid"
                          value="{{ old('parent_name') }}"
                          class="w-full text-sm bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 focus:bg-white focus:outline-none focus:border-emerald-700 transition-all">
                   @error('parent_name') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
@@ -581,7 +581,7 @@
                 <!-- No WhatsApp -->
                 <div>
                   <label for="phone_number" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                    No. WhatsApp Aktif (Wali / Calon Santri) <span class="text-red-500">*</span>
+                    No. WhatsApp Aktif (Wali / Calon Siswa) <span class="text-red-500">*</span>
                   </label>
                   <input type="text" name="phone_number" id="phone_number" required placeholder="Contoh: 081234567890"
                          value="{{ old('phone_number') }}"
@@ -630,15 +630,15 @@
                 <!-- Dormitory Choice -->
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                    Pilihan Tempat Tinggal Santri <span class="text-red-500">*</span>
+                    Pilihan Tempat Tinggal Siswa <span class="text-red-500">*</span>
                   </label>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                     <label class="flex items-start gap-3 p-3.5 border border-slate-200 rounded-xl cursor-pointer hover:bg-emerald-50/50 has-checked:border-emerald-700 has-checked:bg-emerald-50/50 transition-colors">
                       <input type="radio" name="dormitory_choice" value="1" {{ old('dormitory_choice', '1') == '1' ? 'checked' : '' }}
                              class="mt-1 text-emerald-700 focus:ring-emerald-700">
                       <div>
-                        <div class="font-bold text-slate-800 text-xs sm:text-sm">Santri Mukim (Mondok)</div>
-                        <div class="text-[11px] text-slate-500">Tinggal di Asrama Pondok Pesantren Darun Najah</div>
+                        <div class="font-bold text-slate-800 text-xs sm:text-sm">Tinggal di Asrama (Bermukim)</div>
+                        <div class="text-[11px] text-slate-500">Tinggal di Gedung Asrama Siswa Madrasah</div>
                       </div>
                     </label>
 
@@ -646,8 +646,8 @@
                       <input type="radio" name="dormitory_choice" value="0" {{ old('dormitory_choice') == '0' ? 'checked' : '' }}
                              class="mt-1 text-emerald-700 focus:ring-emerald-700">
                       <div>
-                        <div class="font-bold text-slate-800 text-xs sm:text-sm">Santri Non-Mukim (Reguler)</div>
-                        <div class="text-[11px] text-slate-500">Pulang-pergi dari rumah wali santri</div>
+                        <div class="font-bold text-slate-800 text-xs sm:text-sm">Siswa Reguler (Pulang-Pergi)</div>
+                        <div class="text-[11px] text-slate-500">Pulang-pergi dari kediaman orang tua / wali</div>
                       </div>
                     </label>
                   </div>
@@ -678,7 +678,7 @@
         <div class="bg-white p-6 sm:p-10 border-t-4 border-emerald-700 border-x border-b border-slate-200 rounded-2xl shadow-lg">
           <div class="border-b border-slate-100 pb-5 mb-8">
             <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-              Pencarian Status Pendaftaran Santri Baru
+              Pencarian Status Pendaftaran Siswa/i Baru
             </h2>
             <p class="text-xs sm:text-sm text-slate-500 mt-1">
               Masukkan Nomor Registrasi (contoh: <code>PPDB-2026-0001</code>) atau Nomor WhatsApp yang didaftarkan saat pengisian formulir.
@@ -712,7 +712,7 @@
             </div>
             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
               <strong class="text-slate-800 block mb-1">Butuh Bantuan Langsung?</strong>
-              <p>Hubungi sekretariat melalui WhatsApp di <strong>{{ $contact->phone ?? '0856-5897-3426' }}</strong> dengan menyertakan nama santri dan asal sekolah.</p>
+              <p>Hubungi sekretariat melalui WhatsApp di <strong>{{ $contact->phone ?? '0856-5897-3426' }}</strong> dengan menyertakan nama calon siswa/i dan asal sekolah.</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Galeri & Dokumentasi Aktivitas Santri • MA Darun Najah Sambikarto')
+@section('title', 'Galeri & Dokumentasi Aktivitas Siswa/i • Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- Gallery Page Container -->
@@ -47,10 +47,10 @@
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 bg-emerald-900/90 text-amber-300 text-xs font-bold uppercase tracking-widest border-l-4 border-amber-400 rounded-md shadow-sm mb-4">
           <span class="w-1.5 h-1.5 bg-amber-400 rotate-45"></span>
-          <span>Dokumentasi & Potret Santri</span>
+          <span>Dokumentasi & Potret Siswa/i</span>
         </div>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-          Galeri Aktivitas & <span class="text-amber-400">Kehidupan Santri</span>
+          Galeri Aktivitas & <span class="text-amber-400">Kehidupan Siswa/i</span>
         </h1>
         <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
           Koleksi dokumentasi visual kegiatan belajar mengajar, pengajian kitab kuning, kebersamaan di asrama, ekstrakurikuler, dan momentum bersejarah MA Darun Najah Sambikarto.
@@ -203,13 +203,13 @@
       <div class="mt-16 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
         <div class="max-w-2xl mb-8">
           <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">
-            Video Kilas Santri
+            Video Kilas Siswa/i
           </span>
           <h3 class="text-2xl font-extrabold text-slate-900 mt-3">
             Dokumentasi Video & Sorotan Kegiatan
           </h3>
           <p class="text-xs sm:text-sm text-slate-500 mt-1">
-            Simak cuplikan kebersamaan, haflah akhirussanah, dan karya santri MA Darun Najah Sambikarto.
+            Simak cuplikan kebersamaan, haflah akhirussanah, dan karya siswa/i MA Darun Najah Sambikarto.
           </p>
         </div>
 
@@ -246,7 +246,7 @@
         </div>
       </div>
 
-      <!-- 5. CTA Pendaftaran Santri Baru -->
+      <!-- 5. CTA Pendaftaran Siswa/i Baru -->
       <div class="mt-12 bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 text-white rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xl border border-emerald-800 relative overflow-hidden">
         <div class="absolute -right-10 -bottom-10 opacity-10 text-white text-9xl pointer-events-none">
           <i class="fa-solid fa-camera-retro"></i>
@@ -262,7 +262,7 @@
               Ingin Menjadi Bagian dari Cerita Indah Ini?
             </h3>
             <p class="mt-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-              Daftarkan putra-putri Anda di MA Darun Najah Sambikarto. Pendaftaran santri baru Tahun Ajaran 2026/2027 telah dibuka secara online dengan jalur reguler dan beasiswa tahfidz.
+              Daftarkan putra-putri Anda di MA Darun Najah Sambikarto. Pendaftaran siswa/i baru Tahun Ajaran 2026/2027 telah dibuka secara online dengan jalur reguler dan beasiswa tahfidz.
             </p>
           </div>
 

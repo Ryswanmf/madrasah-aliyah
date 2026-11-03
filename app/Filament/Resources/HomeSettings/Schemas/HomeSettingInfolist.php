@@ -21,11 +21,11 @@ class HomeSettingInfolist
                     ->placeholder('-')
                     ->columnSpanFull(),
                 ImageEntry::make('leader_image')
-                    ->label('Foto Pengasuh / Pimpinan')
+                    ->label('Foto Kepala Madrasah / Guru Pembina')
                     ->circular()
                     ->placeholder('-'),
                 TextEntry::make('leader_name')
-                    ->label('Nama Pengasuh / Pimpinan')
+                    ->label('Nama Kepala Madrasah / Guru Pembina')
                     ->weight('bold')
                     ->placeholder('-'),
                 TextEntry::make('leader_role')

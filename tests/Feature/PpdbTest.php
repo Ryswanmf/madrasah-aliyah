@@ -12,9 +12,10 @@ class PpdbTest extends TestCase
 
     public function test_landing_page_renders_successfully(): void
     {
+        $this->seed();
         $response = $this->get('/');
         $response->assertStatus(200);
-        $response->assertSee('PPDN Darun Najah');
+        $response->assertSee('Madrasah Aliyah Darun Najah');
         $response->assertSee('LKP Langgas Sinau');
         $response->assertSee('https://www.langgas-sinau.com/');
     }

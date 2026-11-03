@@ -62,8 +62,8 @@ class Testimonial extends Model
     {
         return match($this->category) {
             'alumni' => 'Alumni Madrasah',
-            'wali_santri' => 'Wali Santri',
-            'santri' => 'Santri Aktif',
+            'wali_santri', 'wali_murid' => 'Wali Murid',
+            'santri', 'siswa' => 'Siswa/i Aktif',
             'tokoh' => 'Tokoh Masyarakat',
             default => ucfirst(str_replace('_', ' ', $this->category)),
         };

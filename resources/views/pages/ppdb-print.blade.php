@@ -460,12 +460,12 @@
     <!-- 1. Kop Surat Resmi -->
     <div class="kop-header">
       <img src="{{ !empty($siteSetting?->site_logo) ? $siteSetting->site_logo_url : (function_exists('webp_asset') ? webp_asset('assets/images/logo.png') : asset('assets/images/logo.png')) }}" 
-           alt="Logo MA Darun Najah" 
+           alt="Logo Madrasah Aliyah Darun Najah" 
            class="kop-logo">
       <div class="kop-text">
-        <div class="foundation">Yayasan Pondok Pesantren Darun Najah Sambikarto</div>
+        <div class="foundation">Yayasan Darun Najah Sambikarto</div>
         <h1 class="institution">Madrasah Aliyah Darun Najah</h1>
-        <div class="accreditation">TERAKREDITASI BAN-SM • LP MA'ARIF NU LAMPUNG TIMUR</div>
+        <div class="accreditation">TERAKREDITASI BAN-SM • KEMENTERIAN AGAMA REPUBLIK INDONESIA</div>
         <div class="address">
           Jl. Raya Bumi Agung, Desa Sambikarto, Kec. Sekampung, Kab. Lampung Timur, Kode Pos 34182<br>
           Website: madarunnajah.sch.id • WhatsApp Panitia: {{ $ppdbSetting->contact_phone ?: ($contact->phone ?? '0856-5897-3426') }}
@@ -475,14 +475,14 @@
 
     <!-- 2. Judul Dokumen -->
     <div class="doc-title-box">
-      <div class="doc-title">KARTU BUKTI PENDAFTARAN SANTRI BARU</div>
+      <div class="doc-title">KARTU BUKTI PENDAFTARAN SISWA/I BARU</div>
       <div class="doc-subtitle">Penerimaan Peserta Didik Baru (PPDB Online) Tahun Ajaran {{ $ppdbSetting->academic_year ?? '2026/2027' }}</div>
     </div>
 
     <!-- 3. Nomor Registrasi & Status -->
     <div class="reg-badge-bar">
       <div class="reg-number-wrap">
-        <div class="label">Nomor Registrasi Santri</div>
+        <div class="label">Nomor Registrasi Siswa/i</div>
         <div class="value">{{ $registration->registration_number }}</div>
       </div>
       <div>
@@ -492,7 +492,7 @@
             default => 'status-pending',
           };
           $statusText = match($registration->status) {
-            'accepted' => 'Diterima sebagai Santri',
+            'accepted' => 'Diterima sebagai Siswa',
             'verified' => 'Berkas Terverifikasi',
             'rejected' => 'Tidak Lolos',
             default => 'Menunggu Verifikasi Berkas',
@@ -505,13 +505,13 @@
       </div>
     </div>
 
-    <!-- 4. Data Diri Calon Santri & Foto Placeholder -->
+    <!-- 4. Data Diri Calon Siswa & Foto Placeholder -->
     <div class="content-grid">
       <div class="data-table-wrap">
-        <div class="section-title">A. Data Calon Santri</div>
+        <div class="section-title">A. Data Calon Siswa</div>
         <table class="data-table">
           <tr>
-            <td class="label-col">Nama Lengkap Santri</td>
+            <td class="label-col">Nama Lengkap Siswa</td>
             <td class="sep-col">:</td>
             <td class="val-col" style="font-size: 13px; text-transform: uppercase;">{{ $registration->full_name }}</td>
           </tr>
@@ -523,7 +523,7 @@
           <tr>
             <td class="label-col">Jenis Kelamin</td>
             <td class="sep-col">:</td>
-            <td class="val-col">{{ $registration->gender === 'L' ? 'Laki-laki (Santri Putra)' : 'Perempuan (Santri Putri)' }}</td>
+            <td class="val-col">{{ $registration->gender === 'L' ? 'Laki-laki' : 'Perempuan' }}</td>
           </tr>
           <tr>
             <td class="label-col">Tempat, Tanggal Lahir</td>
@@ -541,9 +541,9 @@
             <td class="val-col" style="color: #064e3b;">{{ $registration->program_choice }}</td>
           </tr>
           <tr>
-            <td class="label-col">Status Asrama Santri</td>
+            <td class="label-col">Pilihan Tempat Tinggal</td>
             <td class="sep-col">:</td>
-            <td class="val-col">{{ $registration->dormitory_choice ? 'Santri Mukim (Tinggal di Pondok Pesantren)' : 'Santri Non-Mukim (Reguler / Pulang Pergi)' }}</td>
+            <td class="val-col">{{ $registration->dormitory_choice ? 'Tinggal di Asrama (Bermukim)' : 'Siswa Reguler (Pulang-Pergi)' }}</td>
           </tr>
         </table>
 
@@ -587,7 +587,7 @@
     <div class="info-box">
       <h4><i class="fa-solid fa-clipboard-check text-amber-600"></i> Petunjuk Verifikasi Berkas Fisik di Sekretariat Madrasah:</h4>
       <p style="margin-bottom: 6px; color: #475569;">
-        Harap cetak kartu ini dan bawa ke Sekretariat PPDB MA Darun Najah Sambikarto bersama kelengkapan dokumen persyaratan berikut:
+        Harap cetak kartu ini dan bawa ke Sekretariat PPDB Madrasah Aliyah Darun Najah bersama kelengkapan dokumen persyaratan berikut:
       </p>
       <ul>
         @if($ppdbSetting && !empty($ppdbSetting->requirements_list))
@@ -597,7 +597,7 @@
         @else
           <li>Fotokopi Ijazah / Surat Keterangan Lulus (SKL) MTs/SMP terlegalisir (2 lembar)</li>
           <li>Fotokopi Kartu Keluarga (KK) dan KTP Orang Tua / Wali (2 lembar)</li>
-          <li>Fotokopi Akta Kelahiran calon santri (2 lembar)</li>
+          <li>Fotokopi Akta Kelahiran calon siswa (2 lembar)</li>
           <li>Pas foto resmi ukuran 3x4 latar belakang merah (4 lembar)</li>
           <li>Fotokopi KIP / PKH / Piagam Sertifikat Kejuaraan / Tahfidz (jika memiliki)</li>
         @endif
@@ -607,16 +607,16 @@
     <!-- 6. Lembar Tanda Tangan -->
     <div class="signature-grid">
       <div class="sig-col">
-        <div>Calon Santri / Orang Tua Wali,</div>
+        <div>Calon Siswa / Orang Tua Wali,</div>
         <div class="sig-space"></div>
         <div class="sig-name">{{ $registration->full_name }}</div>
         <div class="sig-role">Tanda tangan & Nama Terang</div>
       </div>
 
       <div class="sig-col">
-        <div>Sambikarto, {{ date('d F Y') }}<br>Panitia Penerimaan Santri Baru,</div>
+        <div>Sambikarto, {{ date('d F Y') }}<br>Panitia Penerimaan Peserta Didik Baru,</div>
         <div class="sig-space"></div>
-        <div class="sig-name">{{ $ppdbSetting->contact_name ?? 'Panitia PPDB MA Darun Najah' }}</div>
+        <div class="sig-name">{{ $ppdbSetting->contact_name ?? 'Panitia PPDB Madrasah Aliyah Darun Najah' }}</div>
         <div class="sig-role">NIP / NIY Panitia Sekretariat</div>
       </div>
     </div>

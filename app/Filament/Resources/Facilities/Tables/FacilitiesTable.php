@@ -68,7 +68,7 @@ class FacilitiesTable
                     ->label('Filter Kategori')
                     ->options([
                         'akademik' => 'Gedung & Ruang Kelas',
-                        'asrama' => 'Asrama Santri',
+                        'asrama' => 'Asrama Siswa/i',
                         'ibadah' => 'Masjid & Sarana Religi',
                         'olahraga' => 'Sarana Olahraga',
                         'penunjang' => 'Laboratorium & TIK',

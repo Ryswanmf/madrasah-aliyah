@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::table('home_settings', function (Blueprint $table) {
             // 1. Identitas & Logo
-            $table->string('site_name')->nullable()->default('PPDN Darun Najah');
-            $table->string('site_tagline')->nullable()->default('Madrasah Aliyah • Sambikarto, Sekampung');
+            $table->string('site_name')->nullable()->default('Madrasah Aliyah Darun Najah');
+            $table->string('site_tagline')->nullable()->default('Sambikarto, Sekampung, Lampung Timur');
             $table->string('site_logo')->nullable();
             $table->string('site_favicon')->nullable();
             $table->string('foundation_head')->nullable()->default('Suparno, S.Pd.I');

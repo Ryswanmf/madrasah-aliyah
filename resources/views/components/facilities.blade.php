@@ -43,7 +43,7 @@
         Fasilitas Representatif & <span class="text-amber-400">Modern</span>
       </h2>
       <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-        Lingkungan belajar yang asri, kondusif, dan representatif di Sambikarto untuk menunjang kenyamanan serta tumbuh kembang potensi santri.
+        Lingkungan belajar yang asri, kondusif, dan representatif di Sambikarto untuk menunjang kenyamanan serta tumbuh kembang potensi siswa/i.
       </p>
     </div>
 
@@ -177,7 +177,7 @@
         <p x-text="activeTitle" class="font-bold text-sm sm:text-base text-white"></p>
         <span class="text-xs text-amber-300 font-mono uppercase tracking-wider flex items-center gap-1.5">
           <i class="fa-solid fa-building-columns"></i>
-          <span>MA Darun Najah Sambikarto</span>
+          <span>Madrasah Aliyah Darun Najah</span>
         </span>
       </div>
 

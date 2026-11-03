@@ -66,7 +66,7 @@ class HeroSlideForm
 
                 TextInput::make('badge_1')
                     ->label('Badge Informasi 1')
-                    ->default("LP Ma'arif NU Lampung Timur")
+                    ->default('Kementerian Agama RI')
                     ->columnSpan(1),
 
                 TextInput::make('badge_2')

@@ -24,7 +24,7 @@ class HomeSettingsTable
                     ->circular()
                     ->defaultImageUrl(asset('assets/images/placeholder.jpg')),
                 TextColumn::make('leader_name')
-                    ->label('Pengasuh / Pimpinan')
+                    ->label('Kepala Madrasah / Guru Pembina')
                     ->searchable()
                     ->weight('bold')
                     ->description(fn ($record) => $record->leader_role),

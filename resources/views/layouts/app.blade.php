@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   @php
-    $defaultTitle = $siteSetting->seo_meta_title ?? 'Madrasah Aliyah Darun Najah Sambikarto • Pendidikan Islam Berkarakter, Berakhlak Mulia & Mandiri';
-    $defaultDesc = $siteSetting->seo_meta_description ?? 'Website Resmi Madrasah Aliyah Darun Najah Sambikarto, Sekampung, Lampung Timur. Lembaga pendidikan terakreditasi di bawah naungan LP Ma\'arif NU dengan perpaduan kurikulum nasional dan pesantren salafiyah.';
-    $defaultKeywords = $siteSetting->seo_meta_keywords ?? 'MA Darun Najah, MA Darun Najah Sambikarto, Madrasah Aliyah Sekampung, Pesantren Darun Najah Sambikarto, PPDB MA Darun Najah 2026, Madrasah Lampung Timur';
+    $defaultTitle = $siteSetting->seo_meta_title ?? 'Madrasah Aliyah Darun Najah • Pendidikan Islam Berkarakter, Berakhlak Mulia & Mandiri';
+    $defaultDesc = $siteSetting->seo_meta_description ?? 'Website Resmi Madrasah Aliyah Darun Najah Sambikarto, Sekampung, Lampung Timur. Lembaga pendidikan terakreditasi di bawah naungan Kementerian Agama Republik Indonesia dengan perpaduan kurikulum nasional dan nilai-nilai keislaman.';
+    $defaultKeywords = $siteSetting->seo_meta_keywords ?? 'Madrasah Aliyah Darun Najah, MA Darun Najah, Madrasah Aliyah Sekampung, Pesantren Darun Najah Sambikarto, PPDB MA Darun Najah 2026, Madrasah Lampung Timur';
     $defaultOgImage = !empty($siteSetting?->seo_og_image) ? $siteSetting->seo_og_image_url : (function_exists('webp_asset') ? webp_asset('assets/images/gedung-1.jpg') : asset('assets/images/gedung-1.jpg'));
     $siteFavicon = !empty($siteSetting?->site_favicon) ? $siteSetting->site_favicon_url : (function_exists('webp_asset') ? webp_asset('assets/images/favicon.png') : asset('assets/images/favicon.png'));
     $siteLogo = !empty($siteSetting?->site_logo) ? $siteSetting->site_logo_url : (function_exists('webp_asset') ? webp_asset('assets/images/logo.png') : asset('assets/images/logo.png'));
-    $siteBrandName = $siteSetting->site_name ?? 'MA Darun Najah Sambikarto';
+    $siteBrandName = $siteSetting->site_name ?? 'Madrasah Aliyah Darun Najah';
   @endphp
 
   <title>@yield('title', $defaultTitle)</title>
@@ -47,7 +47,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="MA Darun Najah">
+  <meta name="apple-mobile-web-app-title" content="Madrasah Aliyah Darun Najah">
   <link rel="manifest" href="{{ asset('manifest.webmanifest') }}">
   
   <!-- Favicon -->

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tanya Jawab & Pusat Informasi (FAQ) • MA Darun Najah Sambikarto')
+@section('title', 'Tanya Jawab & Pusat Informasi (FAQ) • Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- FAQ Page Container -->
@@ -19,7 +19,7 @@
     <!-- Background Image & Gradient Overlay -->
     <div class="absolute inset-0 z-0 pointer-events-none">
       <img src="{{ function_exists('webp_asset') ? webp_asset('assets/images/gallery-3.jpg') : asset('assets/images/gallery-3.jpg') }}" 
-           alt="Santri MA Darun Najah" 
+           alt="Siswa/i MA Darun Najah" 
            class="w-full h-full object-cover object-center opacity-20 filter saturate-150">
       <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/95 via-emerald-900/90 to-emerald-950"></div>
       <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#fbbf24_1px,transparent_1px)] [background-size:24px_24px]"></div>
@@ -47,7 +47,7 @@
           Pertanyaan Umum <span class="text-amber-400">(FAQ)</span>
         </h1>
         <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-          Temukan jawaban terlengkap seputar sistem pendidikan, kurikulum terpadu, rutinitas santri di asrama, biaya pendidikan, dan pendaftaran santri baru di MA Darun Najah Sambikarto.
+          Temukan jawaban terlengkap seputar sistem pendidikan, kurikulum terpadu, rutinitas siswa/i di asrama, biaya pendidikan, dan pendaftaran siswa/i baru di MA Darun Najah Sambikarto.
         </p>
       </div>
 
@@ -185,7 +185,7 @@
               Belum Menemukan Jawaban yang Anda Cari?
             </h3>
             <p class="mt-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-              Tim sekretariat pendaftaran dan asatidz MA Darun Najah Sambikarto siap membantu memberikan informasi lebih lanjut seputar pendaftaran santri baru.
+              Tim sekretariat pendaftaran dan asatidz MA Darun Najah Sambikarto siap membantu memberikan informasi lebih lanjut seputar pendaftaran siswa/i baru.
             </p>
           </div>
 

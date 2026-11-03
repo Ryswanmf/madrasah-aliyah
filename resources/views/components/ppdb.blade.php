@@ -6,7 +6,7 @@
   $reqList = $setting ? $setting->requirements_list : [
     'Fotokopi Ijazah / SKL SMP/MTs (legalisir 2 lembar)',
     'Fotokopi Kartu Keluarga (KK) & KTP Orang Tua',
-    'Fotokopi Akta Kelahiran calon santri',
+    'Fotokopi Akta Kelahiran calon siswa',
     'Pas foto ukuran 3x4 (4 lembar, latar biru/merah)',
     'Fotokopi KIP / PKH / Piagam Prestasi (jika memiliki)'
   ];
@@ -146,7 +146,7 @@
               <span class="w-6 h-6 bg-emerald-900 text-amber-300 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 rounded-md border border-emerald-800">1</span>
               <div>
                 <strong class="text-slate-800 block">{{ $setting->step_1_title ?? 'Pengisian Formulir Online' }}</strong>
-                <span>{{ $setting->step_1_desc ?? 'Isi formulir online di website ini dengan data diri lengkap calon santri.' }}</span>
+                <span>{{ $setting->step_1_desc ?? 'Isi formulir online di website ini dengan data diri lengkap calon siswa/i.' }}</span>
               </div>
             </li>
             <li class="flex items-start gap-3">
@@ -167,7 +167,7 @@
               <span class="w-6 h-6 bg-emerald-900 text-amber-300 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 rounded-md border border-emerald-800">4</span>
               <div>
                 <strong class="text-slate-800 block">{{ $setting->step_4_title ?? 'Pengumuman & Daftar Ulang' }}</strong>
-                <span>{{ $setting->step_4_desc ?? 'Pengumuman hasil seleksi dan daftar ulang santri baru.' }}</span>
+                <span>{{ $setting->step_4_desc ?? 'Pengumuman hasil seleksi dan daftar ulang siswa/i baru.' }}</span>
               </div>
             </li>
           </ol>
@@ -215,7 +215,7 @@
             Pendaftaran Online Sedang Ditutup
           </h3>
           <p class="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-            {{ $setting->closed_message ?: 'Mohon maaf, pendaftaran santri baru saat ini sedang ditutup atau kuota pendaftaran telah terpenuhi. Silakan hubungi sekretariat madrasah untuk informasi gelombang berikutnya.' }}
+            {{ $setting->closed_message ?: 'Mohon maaf, pendaftaran siswa/i baru saat ini sedang ditutup atau kuota pendaftaran telah terpenuhi. Silakan hubungi sekretariat madrasah untuk informasi gelombang berikutnya.' }}
           </p>
           <div class="pt-4">
             <a href="{{ $setting->wa_link }}" target="_blank" rel="noopener noreferrer"
@@ -240,7 +240,7 @@
             <!-- Nama Lengkap -->
             <div>
               <label for="full_name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                Nama Lengkap Calon Santri <span class="text-red-500">*</span>
+                Nama Lengkap Calon Siswa/i <span class="text-red-500">*</span>
               </label>
               <input type="text" name="full_name" id="full_name" required placeholder="Contoh: Muhammad Ali Ridho"
                      value="{{ old('full_name') }}"
@@ -266,8 +266,8 @@
                 </label>
                 <select name="gender" id="gender" required
                         class="w-full text-sm bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 focus:bg-white focus:outline-none focus:border-emerald-700 transition-all">
-                  <option value="L" {{ old('gender') == 'L' ? 'selected' : '' }}>Laki-laki (Santri Putra)</option>
-                  <option value="P" {{ old('gender') == 'P' ? 'selected' : '' }}>Perempuan (Santri Putri)</option>
+                  <option value="L" {{ old('gender') == 'L' ? 'selected' : '' }}>Laki-laki (Siswa)</option>
+                  <option value="P" {{ old('gender') == 'P' ? 'selected' : '' }}>Perempuan (Siswi)</option>
                 </select>
                 @error('gender') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
               </div>
@@ -354,16 +354,16 @@
                 <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg cursor-pointer hover:border-emerald-700 hover:bg-emerald-50/50 transition-colors">
                   <input type="radio" name="dormitory_choice" value="1" checked class="text-emerald-700 focus:ring-emerald-600">
                   <div class="text-xs">
-                    <strong class="block text-slate-900 font-bold">Santri Mukim (Tinggal di Asrama)</strong>
-                    <span class="text-slate-500">Mengikuti program pembiasaan pesantren 24 jam</span>
+                    <strong class="block text-slate-900 font-bold">Tinggal di Asrama (Bermukim)</strong>
+                    <span class="text-slate-500">Mendapatkan fasilitas asrama & pembinaan keagamaan intensif</span>
                   </div>
                 </label>
 
                 <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg cursor-pointer hover:border-emerald-700 hover:bg-emerald-50/50 transition-colors">
                   <input type="radio" name="dormitory_choice" value="0" class="text-emerald-700 focus:ring-emerald-600">
                   <div class="text-xs">
-                    <strong class="block text-slate-900 font-bold">Santri Non-Mukim (Reguler)</strong>
-                    <span class="text-slate-500">Pulang pergi dari rumah / domisili sekitar</span>
+                    <strong class="block text-slate-900 font-bold">Siswa Reguler (Pulang-Pergi)</strong>
+                    <span class="text-slate-500">Pulang-pergi dari tempat tinggal / domisili sekitar</span>
                   </div>
                 </label>
               </div>
@@ -384,10 +384,10 @@
               <button type="submit" 
                       class="w-full inline-flex items-center justify-center gap-2 bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs sm:text-sm uppercase tracking-wider py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer border-b-2 border-emerald-950">
                 <i class="fa-solid fa-paper-plane text-amber-400"></i>
-                <span>Kirim Pendaftaran Santri Baru</span>
+                <span>Kirim Pendaftaran Siswa/i Baru</span>
               </button>
               <p class="text-center text-[11px] text-slate-400 mt-2.5">
-                Data Anda dilindungi dan hanya digunakan untuk keperluan penerimaan santri baru MA Darun Najah Sambikarto.
+                Data Anda dilindungi dan hanya digunakan untuk keperluan penerimaan siswa/i baru Madrasah Aliyah Darun Najah.
               </p>
             </div>
 

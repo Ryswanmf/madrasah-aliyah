@@ -51,8 +51,8 @@ class TeachersTable
                 SelectFilter::make('category')
                     ->label('Kategori')
                     ->options([
-                        'pimpinan' => 'Pimpinan & Pengasuh',
-                        'asatidz_kitab' => 'Dewan Asatidz Kitab & Pesantren',
+                        'pimpinan' => 'Pimpinan & Guru Pembina',
+                        'asatidz_kitab' => 'Dewan Guru Keagamaan & Kitab',
                         'guru_mapel' => 'Guru Mata Pelajaran Umum',
                         'staf' => 'Tenaga Kependidikan & TU',
                     ]),

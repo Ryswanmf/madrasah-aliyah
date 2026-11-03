@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('pic_name')->nullable()->comment('Nama Penanggung Jawab / Petugas');
             $table->string('phone', 30)->default('0856-5897-3426');
             $table->string('whatsapp', 30)->default('085658973426');
-            $table->string('email', 100)->default('madarunnajah.sambikarto@gmail.com');
+            $table->string('email', 100)->default('mudarunnajah60@gmail.com');
             $table->text('address')->nullable();
             $table->string('office_hours')->default('Senin - Sabtu: 07.30 - 14.00 WIB');
             $table->text('maps_embed_url')->nullable();

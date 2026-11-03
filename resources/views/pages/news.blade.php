@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Warta, Kabar & Pengumuman Resmi • MA Darun Najah Sambikarto')
+@section('title', 'Warta, Kabar & Pengumuman Resmi • Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- News Page Container -->
@@ -22,19 +22,19 @@
            author: 'Humas MA',
            title: 'Pembukaan PPDB MA Darun Najah Sambikarto Tahun Ajaran 2026/2027',
            img: '{{ function_exists('webp_asset') ? webp_asset('assets/images/gedung-1.jpg') : asset('assets/images/gedung-1.jpg') }}',
-           excerpt: 'Pendaftaran santri baru kini telah dibuka secara online melalui website resmi dengan jalur reguler dan beasiswa tahfidz Al-Qur\'an.',
-           content: 'Penerimaan Peserta Didik Baru (PPDB) MA Darun Najah Sambikarto untuk Tahun Ajaran 2026/2027 resmi dibuka mulai 2 November 2026. Calon santri dari seluruh Indonesia dapat memilih program mukim (tinggal di pondok pesantren) maupun program non-mukim (reguler). Tersedia beasiswa penuh bebas SPP untuk calon santri penghafal Al-Qur\'an minimal 3 juz dan santri berprestasi tingkat kabupaten/provinsi. Pendaftaran dapat dilakukan langsung secara online melalui portal website resmi ini 24 jam nonstop.'
+           excerpt: 'Pendaftaran peserta didik baru kini telah dibuka secara online melalui website resmi dengan jalur reguler dan beasiswa tahfidz Al-Qur\'an.',
+           content: 'Penerimaan Peserta Didik Baru (PPDB) MA Darun Najah Sambikarto untuk Tahun Ajaran 2026/2027 resmi dibuka mulai 2 November 2026. Calon siswa dari berbagai daerah dapat memilih opsi fasilitas asrama madrasah maupun kelas reguler. Tersedia beasiswa penuh bebas SPP untuk calon peserta didik penghafal Al-Qur\'an minimal 3 juz dan siswa berprestasi tingkat kabupaten/provinsi. Pendaftaran dapat dilakukan langsung secara online melalui portal website resmi ini 24 jam nonstop.'
          },
          {
            id: 2,
            category: 'prestasi',
-           categoryLabel: 'Prestasi Santri',
+           categoryLabel: 'Prestasi Siswa/i',
            date: '28 Oktober 2026',
            author: 'Kesiswaan',
-           title: 'Santri MA Darun Najah Raih Juara Seni Hadroh & Kaligrafi Tingkat Kabupaten',
+           title: 'Siswa/i MA Darun Najah Raih Juara Seni Hadroh & Kaligrafi Tingkat Kabupaten',
            img: '{{ function_exists('webp_asset') ? webp_asset('assets/images/gallery-2.jpg') : asset('assets/images/gallery-2.jpg') }}',
-           excerpt: 'Grup Hadroh Ash-Shofwah dan santri kaligrafi madrasah sukses memboyong piala kejuaraan festival seni Islam se-Lampung Timur.',
-           content: 'Prestasi membanggakan kembali ditorehkan santri MA Darun Najah Sambikarto dalam Festival Seni Islam tingkat Kabupaten Lampung Timur yang digelar pekan ini. Grup Hadroh Shalawat Ash-Shofwah berhasil meraih Juara 1 kategori Hadroh Klasik, sementara perwakilan cabang kaligrafi kontemporer berhasil menyabet Juara 2. Kepala Madrasah menyampaikan apresiasi setinggi-tingginya kepada para santri dan pembina ekstrakurikuler atas dedikasi dan kerja keras yang membuahkan hasil gemilang.'
+           excerpt: 'Grup Hadroh Ash-Shofwah dan siswa/i kaligrafi madrasah sukses memboyong piala kejuaraan festival seni Islam se-Lampung Timur.',
+           content: 'Prestasi membanggakan kembali ditorehkan siswa/i MA Darun Najah Sambikarto dalam Festival Seni Islam tingkat Kabupaten Lampung Timur yang digelar pekan ini. Grup Hadroh Shalawat Ash-Shofwah berhasil meraih Juara 1 kategori Hadroh Klasik, sementara perwakilan cabang kaligrafi kontemporer berhasil menyabet Juara 2. Kepala Madrasah menyampaikan apresiasi setinggi-tingginya kepada para siswa/i dan pembina ekstrakurikuler atas dedikasi dan kerja keras yang membuahkan hasil gemilang.'
          },
          {
            id: 3,
@@ -42,10 +42,10 @@
            categoryLabel: 'Kepesantrenan',
            date: '15 Oktober 2026',
            author: 'Dewan Asatidz',
-           title: 'Kajian Kitab Kuning Rutin & Pembekalan Akhlakul Karimah Santri Akhir',
+           title: 'Kajian Kitab Kuning Rutin & Pembekalan Akhlakul Karimah Siswa/i Akhir',
            img: '{{ function_exists('webp_asset') ? webp_asset('assets/images/gallery-3.jpg') : asset('assets/images/gallery-3.jpg') }}',
-           excerpt: 'Memperdalam pemahaman kitab turats para ulama salaf guna membekali santri akhir dengan akidah kokoh dan budi pekerti luhur.',
-           content: 'Sebagai ikhtiar memperkuat pondasi keagamaan santri kelas akhir, Pondok Pesantren Darun Najah menyelenggarakan pengajian kitab kuning kilat (dauroh ilmiah turats) mengkaji kitab Fathul Qorib dan Ta\'limul Muta\'allim. Pembekalan ini dipimpin langsung oleh Pengasuh KH. Sahlan Abdulloh dan KH. Abdul Ghofar, S.Pd.I, yang menekankan pentingnya adab santri, sanad keilmuan yang bersambung, dan kesiapan mengabdi di tengah-tengah masyarakat luas.'
+           excerpt: 'Memperdalam pemahaman kitab turats para ulama salaf guna membekali siswa/i akhir dengan akidah kokoh dan budi pekerti luhur.',
+           content: 'Sebagai ikhtiar memperkuat pondasi keagamaan siswa kelas akhir, Madrasah Aliyah Darun Najah menyelenggarakan pengajian kitab kuning kilat (dauroh ilmiah turats) mengkaji kitab Fathul Qorib dan Ta\'limul Muta\'allim. Pembekalan ini dipimpin langsung oleh pembina keagamaan KH. Sahlan Abdulloh dan KH. Abdul Ghofar, S.Pd.I, yang menekankan pentingnya adab penuntut ilmu, sanad keilmuan yang bersambung, dan kesiapan mengabdi di tengah-tengah masyarakat luas.'
          },
          {
            id: 4,
@@ -53,10 +53,10 @@
            categoryLabel: 'Vokasi & TIK',
            date: '10 Oktober 2026',
            author: 'Pembina TIK',
-           title: 'Workshop Literasi Digital & Keterampilan Desain Grafis Santri Mandiri',
+           title: 'Workshop Literasi Digital & Keterampilan Desain Grafis Siswa/i Mandiri',
            img: '{{ function_exists('webp_asset') ? webp_asset('assets/images/facility-thumb-1.jpg') : asset('assets/images/facility-thumb-1.jpg') }}',
-           excerpt: 'Pelatihan pemanfaatan teknologi informasi, desain grafis, dan multimedia berbasis laboratorium komputer untuk kemandirian santri.',
-           content: 'Menghadapi era transformasi digital, MA Darun Najah Sambikarto mengadakan pelatihan intensif desain grafis dan konten edukasi islami di Laboratorium Komputer Madrasah. Kegiatan ini diikuti oleh 40 perwakilan santri putra dan putri. Materi yang diajarkan meliputi dasar-dasar desain publikasi, editing video dakwah, dan pengelolaan web madrasah guna membekali santri dengan life-skill yang aplikatif di era modern.'
+           excerpt: 'Pelatihan pemanfaatan teknologi informasi, desain grafis, dan multimedia berbasis laboratorium komputer untuk kemandirian siswa/i.',
+           content: 'Menghadapi era transformasi digital, MA Darun Najah Sambikarto mengadakan pelatihan intensif desain grafis dan konten edukasi islami di Laboratorium Komputer Madrasah. Kegiatan ini diikuti oleh 40 perwakilan siswa dan siswi. Materi yang diajarkan meliputi dasar-dasar desain publikasi, editing video dakwah, dan pengelolaan web madrasah guna membekali siswa/i dengan life-skill yang aplikatif di era modern.'
          },
          {
            id: 5,
@@ -66,8 +66,8 @@
            author: 'Guru BK',
            title: 'Sosialisasi Seleksi Masuk Perguruan Tinggi Negeri (SNBP & SPAN-PTKIN)',
            img: '{{ function_exists('webp_asset') ? webp_asset('assets/images/gallery-1.jpg') : asset('assets/images/gallery-1.jpg') }}',
-           excerpt: 'Bimbingan intensif persiapan studi lanjut ke Perguruan Tinggi Negeri dan PTKIN (UIN/IAIN) bagi santri kelas XII.',
-           content: 'Tim Bimbingan Konseling (BK) MA Darun Najah menggelar sosialisasi seleksi masuk perguruan tinggi bagi seluruh siswa kelas XII. Sosialisasi mencakup jalur prestasi raport (SNBP & SPAN-PTKIN), jalur tes berbasis komputer (SNBT & UM-PTKIN), serta peluang beasiswa KIP-Kuliah dan beasiswa santri berprestasi Kemenag RI.'
+           excerpt: 'Bimbingan intensif persiapan studi lanjut ke Perguruan Tinggi Negeri dan PTKIN (UIN/IAIN) bagi siswa/i kelas XII.',
+           content: 'Tim Bimbingan Konseling (BK) MA Darun Najah menggelar sosialisasi seleksi masuk perguruan tinggi bagi seluruh siswa kelas XII. Sosialisasi mencakup jalur prestasi raport (SNBP & SPAN-PTKIN), jalur tes berbasis komputer (SNBT & UM-PTKIN), serta peluang beasiswa KIP-Kuliah dan beasiswa siswa/i berprestasi Kemenag RI.'
          },
          {
            id: 6,
@@ -75,10 +75,10 @@
            categoryLabel: 'Hari Besar',
            date: '22 Oktober 2026',
            author: 'OSIM MA',
-           title: 'Peringatan Hari Santri Nasional & Apel Akbar Santri Sambikarto',
+           title: 'Peringatan Hari Santri Nasional & Apel Akbar Siswa/i Sambikarto',
            img: '{{ function_exists('webp_asset') ? webp_asset('assets/images/gedung-3.jpg') : asset('assets/images/gedung-3.jpg') }}',
-           excerpt: 'Ratusan santri dan asatidz MA Darun Najah menggelar apel akbar dengan sarung dan peci memperingati Resolusi Jihad 22 Oktober.',
-           content: 'Dengan mengenakan pakaian khas santri bersarung dan berpeci hitam, ratusan santri MA Darun Najah Sambikarto memadati lapangan upacara utama dalam peringatan Hari Santri Nasional 2026. Acara dilanjutkan dengan pawai ta\'aruf, pembacaan ikrar santri, dan pentas seni kreasi santri bernuansa islami.'
+           excerpt: 'Ratusan siswa/i dan guru MA Darun Najah menggelar apel akbar memperingati Hari Santri Nasional 22 Oktober.',
+           content: 'Dengan mengenakan pakaian rapi bernuansa islami, ratusan siswa/i MA Darun Najah Sambikarto memadati lapangan upacara utama dalam peringatan Hari Santri Nasional 2026. Acara dilanjutkan dengan pawai ta\'aruf, pembacaan ikrar pelajar, dan pentas seni kreasi siswa/i bernuansa islami.'
          },
          {
            id: 7,
@@ -89,18 +89,18 @@
            title: 'Simulasi Asesmen Nasional Berbasis Komputer (ANBK) Berjalan Tertib',
            img: '{{ function_exists('webp_asset') ? webp_asset('assets/images/facility-thumb-3.jpg') : asset('assets/images/facility-thumb-3.jpg') }}',
            excerpt: 'Kesiapan sarana laboratorium komputer dan jaringan internet terbukti handal dalam pelaksanaan gladi bersih asesmen nasional.',
-           content: 'Pelaksanaan gladi bersih Asesmen Nasional Berbasis Komputer (ANBK) di MA Darun Najah berlangsung lancar tanpa kendala teknis. Didukung fasilitas 30 unit komputer dan koneksi serat optik yang stabil, para santri dapat menyelesaikan asesmen literasi dan numerasi dengan fokus dan percaya diri.'
+           content: 'Pelaksanaan gladi bersih Asesmen Nasional Berbasis Komputer (ANBK) di MA Darun Najah berlangsung lancar tanpa kendala teknis. Didukung fasilitas 30 unit komputer dan koneksi serat optik yang stabil, para siswa/i dapat menyelesaikan asesmen literasi dan numerasi dengan fokus dan percaya diri.'
          },
          {
            id: 8,
            category: 'pesantren',
-           categoryLabel: 'Wisuda Santri',
+           categoryLabel: 'Wisuda Siswa/i',
            date: '5 September 2026',
            author: 'Panitia Wisuda',
-           title: 'Wisuda Purnawiyata & Khotmil Qur\'an Bil Ghoib Santri Pondok Pesantren',
+           title: 'Wisuda Purnawiyata & Khotmil Qur\'an Siswa Madrasah Aliyah',
            img: '{{ function_exists('webp_asset') ? webp_asset('assets/images/gedung-4.jpg') : asset('assets/images/gedung-4.jpg') }}',
-           excerpt: 'Prosesi wisuda penuh haru atas kelulusan santri angkatan ke-X dan wisuda hafalan Al-Qur\'an 30 Juz santri mukim.',
-           content: 'Suasana haru dan syukur mewarnai prosesi wisuda purnawiyata santri MA Darun Najah Sambikarto di Aula Masjid Kampus. Selain melepas lulusan formal, acara dirangkai dengan wisuda Khotmil Qur\'an bagi para santri mukim yang telah menyelesaikan setoran hafalan Al-Qur\'an disaksikan oleh orang tua/wali santri.'
+           excerpt: 'Prosesi wisuda penuh haru atas kelulusan siswa angkatan ke-X dan wisuda hafalan Al-Qur\'an 30 Juz bagi siswa berprestasi.',
+           content: 'Suasana haru dan syukur mewarnai prosesi wisuda purnawiyata siswa MA Darun Najah Sambikarto di Aula Kampus. Selain melepas kelulusan formal, acara dirangkai dengan wisuda Khotmil Qur\'an disaksikan oleh dewan guru dan orang tua/wali murid.'
          }
        ],
        @endif
@@ -153,7 +153,7 @@
           Warta, Kabar & <span class="text-amber-400">Pengumuman</span>
         </h1>
         <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-          Kilas kegiatan pembelajaran madrasah, prestasi gemilang para santri, pengumuman resmi akademik, serta dinamika kehidupan Pondok Pesantren Darun Najah Sambikarto.
+          Kilas kegiatan pembelajaran madrasah, prestasi gemilang para siswa, pengumuman resmi akademik, serta dinamika kegiatan keagamaan Madrasah Aliyah Darun Najah Sambikarto.
         </p>
       </div>
 
@@ -184,94 +184,97 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Category Filter Tabs (Soft Rounded Style) -->
-      <div class="flex flex-wrap gap-2 sm:gap-2.5 mb-10 pb-4 border-b border-slate-200">
+      <div class="flex flex-wrap gap-1.5 sm:gap-2.5 mb-6 sm:mb-10 pb-3 sm:pb-4 border-b border-slate-200">
         <button @click="activeCategory = 'all'" 
                 :class="activeCategory === 'all' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium'"
-                class="px-4 py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2">
-          <i class="fa-solid fa-newspaper"></i>
+                class="px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-lg border text-[10px] sm:text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2">
+          <i class="fa-solid fa-newspaper text-xs"></i>
           <span>Semua Berita</span>
         </button>
 
         <button @click="activeCategory = 'featured'" 
                 :class="activeCategory === 'featured' ? 'bg-amber-400 text-emerald-950 border-amber-500 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium'"
-                class="px-4 py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2">
-          <i class="fa-solid fa-star text-amber-500" :class="activeCategory === 'featured' ? 'text-emerald-950' : 'text-amber-500'"></i>
+                class="px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-lg border text-[10px] sm:text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2">
+          <i class="fa-solid fa-star text-xs" :class="activeCategory === 'featured' ? 'text-emerald-950' : 'text-amber-500'"></i>
           <span>Berita Unggulan</span>
         </button>
 
         <button @click="activeCategory = 'ppdb'" 
                 :class="activeCategory === 'ppdb' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium'"
-                class="px-4 py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <span>PPDB & Pendaftaran</span>
+                class="px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-lg border text-[10px] sm:text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2">
+          <i class="fa-solid fa-graduation-cap text-xs"></i>
+          <span>PPDB</span>
         </button>
 
         <button @click="activeCategory = 'prestasi'" 
                 :class="activeCategory === 'prestasi' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium'"
-                class="px-4 py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2">
-          <i class="fa-solid fa-trophy"></i>
-          <span>Prestasi Santri</span>
+                class="px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-lg border text-[10px] sm:text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2">
+          <i class="fa-solid fa-trophy text-xs"></i>
+          <span>Prestasi Siswa/i</span>
         </button>
 
         <button @click="activeCategory = 'pesantren'" 
                 :class="activeCategory === 'pesantren' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium'"
-                class="px-4 py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2">
-          <i class="fa-solid fa-book-quran"></i>
+                class="px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-lg border text-[10px] sm:text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2">
+          <i class="fa-solid fa-book-quran text-xs"></i>
           <span>Kepesantrenan</span>
         </button>
 
         <button @click="activeCategory = 'akademik'" 
                 :class="activeCategory === 'akademik' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium'"
-                class="px-4 py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2">
-          <i class="fa-solid fa-laptop-code"></i>
+                class="px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-lg border text-[10px] sm:text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2">
+          <i class="fa-solid fa-laptop-code text-xs"></i>
           <span>Akademik & TIK</span>
         </button>
 
         <button @click="activeCategory = 'kegiatan'" 
                 :class="activeCategory === 'kegiatan' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium'"
-                class="px-4 py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2">
-          <i class="fa-solid fa-calendar-check"></i>
-          <span>Kegiatan & Agenda</span>
+                class="px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-lg border text-[10px] sm:text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2">
+          <i class="fa-solid fa-calendar-check text-xs"></i>
+          <span>Kegiatan</span>
         </button>
       </div>
 
-      <!-- Articles Grid (Soft Rounded High-Contrast Cards) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Articles Grid: 2 Columns Mobile (2 2), 4 Columns Desktop -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
         
         <template x-for="item in articles" :key="item.id">
           <article x-show="matchesFilter(item)"
-                   class="bg-white text-slate-800 border-t-4 border-emerald-600 border-x border-b border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+                   class="bg-white text-slate-800 border-t-4 border-emerald-600 border-x border-b border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
             <a :href="item.slug ? ('/berita/' + item.slug) : '#'" 
                @click="if(!item.slug) { $event.preventDefault(); openDetail(item); }"
-               class="block cursor-pointer">
+               class="block cursor-pointer flex flex-col flex-1">
               <div class="relative overflow-hidden aspect-16/10 bg-slate-100">
                 <img :src="item.img" :alt="item.title" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-3 left-3 bg-emerald-950/90 text-amber-300 border-l-3 border-amber-400 rounded-md text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 shadow-md backdrop-blur-xs" x-text="item.categoryLabel"></span>
+                <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-emerald-950/90 text-amber-300 border-l-2 sm:border-l-3 border-amber-400 rounded text-[8px] sm:text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 sm:px-2.5 sm:py-1 shadow-md backdrop-blur-xs truncate max-w-[65%]" x-text="item.categoryLabel"></span>
                 <span x-show="item.is_featured" 
-                      class="absolute top-3 right-3 bg-amber-400 text-emerald-950 font-black text-[10px] uppercase tracking-wider px-2 py-0.5 rounded shadow flex items-center gap-1 z-10">
-                  <i class="fa-solid fa-star text-[9px]"></i>
-                  <span>Unggulan</span>
+                      class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-amber-400 text-emerald-950 font-black text-[8px] sm:text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded shadow flex items-center gap-1 z-10">
+                  <i class="fa-solid fa-star text-[8px]"></i>
+                  <span class="hidden sm:inline">Unggulan</span>
                 </span>
               </div>
-              <div class="p-5">
-                <div class="flex items-center gap-2 text-xs text-slate-400 mb-2.5 font-mono">
-                  <span class="flex items-center gap-1"><i class="fa-regular fa-calendar text-emerald-600"></i> <span x-text="item.date"></span></span>
-                  <span>•</span>
-                  <span class="truncate max-w-[100px]" x-text="item.author"></span>
+              <div class="p-3 sm:p-5 flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 sm:gap-2 text-[9px] sm:text-xs text-slate-400 mb-1.5 sm:mb-2.5 font-mono truncate">
+                    <span class="flex items-center gap-1 shrink-0"><i class="fa-regular fa-calendar text-emerald-600"></i> <span x-text="item.date"></span></span>
+                    <span>•</span>
+                    <span class="truncate max-w-[70px] sm:max-w-[100px]" x-text="item.author"></span>
+                  </div>
+                  <h3 class="text-xs sm:text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors line-clamp-2 leading-tight sm:leading-snug min-h-[2rem] sm:min-h-[2.5rem]" x-text="item.title"></h3>
                 </div>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors line-clamp-2 leading-snug" x-text="item.title"></h3>
-                <p class="mt-2 text-xs text-slate-600 line-clamp-3 leading-relaxed" x-text="item.excerpt"></p>
+                <p class="hidden sm:block mt-2 text-xs text-slate-600 line-clamp-3 leading-relaxed" x-text="item.excerpt"></p>
               </div>
             </a>
-            <div class="px-5 pb-5 pt-0">
-              <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-emerald-700">
+            <div class="px-3 pb-3 sm:px-5 sm:pb-5 pt-0">
+              <div class="pt-2 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-[10px] sm:text-xs font-semibold text-emerald-700">
                 <a :href="item.slug ? ('/berita/' + item.slug) : '#'"
                    @click="if(!item.slug) { $event.preventDefault(); openDetail(item); }"
                    class="inline-flex items-center gap-1 font-bold hover:text-amber-600 transition-colors">
-                  <span>Baca Selengkapnya</span>
-                  <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                  <span class="hidden sm:inline">Baca Selengkapnya</span>
+                  <span class="sm:hidden">Baca</span>
+                  <i class="fa-solid fa-arrow-right text-[8px] sm:text-[10px] group-hover:translate-x-1 transition-transform"></i>
                 </a>
-                <span class="text-[11px] text-slate-400 font-normal" x-text="item.reading_time || '2 menit baca'"></span>
+                <span class="text-[9px] sm:text-[11px] text-slate-400 font-normal truncate max-w-[70px] sm:max-w-none" x-text="item.reading_time || '2 menit baca'"></span>
               </div>
             </div>
           </article>
@@ -304,8 +307,8 @@
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
             <i class="fa-solid fa-calendar-days text-emerald-600 text-2xl mt-0.5"></i>
             <div>
-              <h4 class="font-bold text-sm text-slate-900">Kalender Akademik Santri</h4>
-              <p class="text-xs text-slate-500 mt-1">Jadwal kegiatan madrasah, dauroh kitab, dan libur pondok.</p>
+              <h4 class="font-bold text-sm text-slate-900">Kalender Akademik Siswa/i</h4>
+              <p class="text-xs text-slate-500 mt-1">Jadwal kegiatan madrasah, ujian semester, dan kalender pendidikan.</p>
               <a href="{{ route('faq') }}" class="inline-block mt-2 text-xs font-bold text-emerald-700 hover:text-emerald-900">Tanya Jadwal &rarr;</a>
             </div>
           </div>
@@ -314,7 +317,7 @@
             <i class="fa-solid fa-award text-amber-500 text-2xl mt-0.5"></i>
             <div>
               <h4 class="font-bold text-sm text-slate-900">Syarat Beasiswa Tahfidz</h4>
-              <p class="text-xs text-slate-500 mt-1">Pedoman seleksi santri penghafal Al-Qur'an 3 Juz mutqin.</p>
+              <p class="text-xs text-slate-500 mt-1">Pedoman seleksi calon siswa/i penghafal Al-Qur'an 3 Juz mutqin.</p>
               <a href="https://wa.me/6285658973426?text=Halo%20Admin,%20saya%20ingin%20tanya%20syarat%20beasiswa%20tahfidz%20MA%20Darun%20Najah" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-xs font-bold text-emerald-700 hover:text-emerald-900">Konsultasi WA &rarr;</a>
             </div>
           </div>
@@ -334,7 +337,7 @@
               <span>PPDB Online Aktif</span>
             </div>
             <h3 class="text-xl sm:text-2xl font-extrabold text-white">
-              Siap Mengukir Prestasi Bersama MA Darun Najah?
+              Siap Mengukir Prestasi Bersama Madrasah Aliyah Darun Najah?
             </h3>
             <p class="mt-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
               Daftarkan diri Anda sekarang juga secara online atau kunjungi sekretariat kami di Sambikarto, Sekampung, Lampung Timur.
@@ -405,7 +408,7 @@
         </div>
 
         <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
-          <span class="text-xs text-slate-400 font-mono">MA Darun Najah Sambikarto</span>
+          <span class="text-xs text-slate-400 font-mono">Madrasah Aliyah Darun Najah</span>
           <button @click="modalOpen = false" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-lg transition-colors">
             Tutup
           </button>

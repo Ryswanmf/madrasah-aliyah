@@ -107,7 +107,7 @@ class News extends Model
         if (str_contains($cat, 'prestasi')) {
             return ['bg' => 'bg-amber-100', 'text' => 'text-amber-800', 'border' => 'border-amber-200'];
         }
-        if (str_contains($cat, 'pesantren') || str_contains($cat, 'santri') || str_contains($cat, 'kitab')) {
+        if (str_contains($cat, 'pesantren') || str_contains($cat, 'santri') || str_contains($cat, 'siswa') || str_contains($cat, 'kitab')) {
             return ['bg' => 'bg-teal-100', 'text' => 'text-teal-800', 'border' => 'border-teal-200'];
         }
         if (str_contains($cat, 'vokasi') || str_contains($cat, 'tik') || str_contains($cat, 'komputer')) {

@@ -96,6 +96,10 @@ Route::get('/tanya-jawab', function (\Illuminate\Http\Request $request) {
     return view('pages.faq', compact('faqs', 'currentCategory'));
 })->name('faq');
 
+Route::get('/faq', function () {
+    return redirect()->route('faq');
+});
+
 Route::get('/fasilitas', function (\Illuminate\Http\Request $request) {
     $currentCategory = $request->query('kategori', 'all');
 

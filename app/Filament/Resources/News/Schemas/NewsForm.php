@@ -19,7 +19,7 @@ class NewsForm
             ->components([
                 TextInput::make('title')
                     ->label('Judul Berita / Warta')
-                    ->placeholder('Contoh: Santri MA Darun Najah Raih Juara Seni Hadroh')
+                    ->placeholder('Contoh: Siswa/i MA Darun Najah Raih Juara Seni Hadroh')
                     ->required()
                     ->live(onBlur: true)
                     ->afterStateUpdated(function (string $operation, $state, callable $set) {
@@ -41,7 +41,7 @@ class NewsForm
                     ->label('Kategori Warta')
                     ->options([
                         'Pengumuman PPDB' => 'Pengumuman PPDB',
-                        'Prestasi Santri' => 'Prestasi Santri',
+                        'Prestasi Siswa/i' => 'Prestasi Siswa/i',
                         'Kepesantrenan' => 'Kepesantrenan',
                         'Vokasi & TIK' => 'Vokasi & TIK',
                         'Warta Madrasah' => 'Warta Madrasah',
@@ -99,7 +99,7 @@ class NewsForm
 
                 TextInput::make('meta_keywords')
                     ->label('SEO Meta Keywords')
-                    ->placeholder('berita ma darun najah, sekampung, ppdb 2026, santri prestasi')
+                    ->placeholder('berita ma darun najah, sekampung, ppdb 2026, siswa prestasi')
                     ->helperText('Pisahkan kata kunci dengan tanda koma')
                     ->columnSpan(1),
 

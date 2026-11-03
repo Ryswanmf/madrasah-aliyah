@@ -248,7 +248,7 @@
           <div class="bg-slate-50 rounded-xl p-5 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="text-center sm:text-left">
               <h4 class="font-bold text-slate-900 text-sm">Bagikan Kabar Baik Ini:</h4>
-              <p class="text-xs text-slate-500 mt-0.5">Sebarkan warta dan prestasi santri kepada keluarga serta masyarakat luas.</p>
+              <p class="text-xs text-slate-500 mt-0.5">Sebarkan warta dan prestasi siswa/i kepada keluarga serta masyarakat luas.</p>
             </div>
 
             <div class="flex items-center gap-2">
@@ -377,10 +377,10 @@
       <div class="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
         <div class="max-w-xl">
           <span class="inline-block px-3 py-1 bg-amber-400/20 text-amber-300 text-[10px] font-bold uppercase tracking-wider rounded border border-amber-400/30 mb-2">
-            Pendaftaran Santri Baru 2026/2027
+            Pendaftaran Siswa/i Baru 2026/2027
           </span>
           <h3 class="text-xl sm:text-2xl font-extrabold text-white">
-            Tertarik Menjadi Bagian dari MA Darun Najah?
+            Tertarik Menjadi Bagian dari Madrasah Aliyah Darun Najah?
           </h3>
           <p class="text-xs sm:text-sm text-emerald-100/90 mt-1.5 leading-relaxed">
             Daftarkan diri Anda secara online untuk jalur reguler atau beasiswa tahfidz Al-Qur'an dan prestasi.

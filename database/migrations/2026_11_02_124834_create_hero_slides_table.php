@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('button_url')->nullable()->default('/ppdb');
             $table->string('button_secondary_text')->nullable()->default('Hubungi Panitia (WA)');
             $table->string('button_secondary_url')->nullable();
-            $table->string('badge_1')->nullable()->default("LP Ma'arif NU Lampung Timur");
+            $table->string('badge_1')->nullable()->default('Kementerian Agama RI');
             $table->string('badge_2')->nullable()->default('Terakreditasi BAN-SM');
             $table->integer('order')->default(0);
             $table->boolean('is_active')->default(true);

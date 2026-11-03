@@ -23,7 +23,7 @@ class StatsOverview extends StatsOverviewWidget
 
         return [
             Stat::make('Total Pendaftar PPDB', $totalPpdb)
-                ->description('Santri Baru TP 2026/2027')
+                ->description('Siswa/i Baru TP 2026/2027')
                 ->descriptionIcon(Heroicon::OutlinedAcademicCap)
                 ->color('primary'),
 
@@ -32,7 +32,7 @@ class StatsOverview extends StatsOverviewWidget
                 ->descriptionIcon(Heroicon::OutlinedClock)
                 ->color($pendingPpdb > 0 ? 'warning' : 'gray'),
 
-            Stat::make('Santri Diterima', $acceptedPpdb)
+            Stat::make('Siswa/i Diterima', $acceptedPpdb)
                 ->description('Lolos seleksi & beasiswa')
                 ->descriptionIcon(Heroicon::OutlinedCheckCircle)
                 ->color('success'),

@@ -25,7 +25,7 @@ class FacilityForm
                     ->label('Kategori Fasilitas')
                     ->options([
                         'akademik' => 'Gedung & Ruang Kelas (Akademik)',
-                        'asrama' => 'Asrama Santri Mukim',
+                        'asrama' => 'Asrama Siswa/i',
                         'ibadah' => 'Masjid & Sarana Religi',
                         'olahraga' => 'Sarana Olahraga & Halaman',
                         'penunjang' => 'Laboratorium & TIK',

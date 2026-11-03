@@ -62,7 +62,7 @@ class ContactMessageForm
 
                         Textarea::make('admin_notes')
                             ->label('Catatan Petugas / Tindak Lanjut')
-                            ->placeholder('Contoh: Telah ditelepon oleh Ustadz Fauzi pada tgl 2 Nov, wali santri akan mendaftar online malam ini.')
+                            ->placeholder('Contoh: Telah ditelepon oleh panitia pada tgl 2 Nov, orang tua / wali murid akan mendaftar online malam ini.')
                             ->rows(3)
                             ->columnSpanFull(),
                     ])

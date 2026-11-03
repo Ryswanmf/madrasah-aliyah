@@ -40,7 +40,7 @@ class ContactForm
 
                 TextInput::make('email')
                     ->label('Alamat Email Resmi')
-                    ->placeholder('Contoh: madarunnajah.sambikarto@gmail.com')
+                    ->placeholder('Contoh: mudarunnajah60@gmail.com')
                     ->email()
                     ->required()
                     ->columnSpan(1),

@@ -18,7 +18,7 @@ class PpdbRegistrationController extends Controller
         $ppdbSetting = PpdbSetting::first();
         if ($ppdbSetting && ! $ppdbSetting->is_open) {
             return redirect()->back()->withErrors([
-                'full_name' => $ppdbSetting->closed_message ?: 'Pendaftaran santri baru online saat ini sedang ditutup.',
+                'full_name' => $ppdbSetting->closed_message ?: 'Pendaftaran siswa/i baru online saat ini sedang ditutup.',
             ]);
         }
 
@@ -50,11 +50,11 @@ class PpdbRegistrationController extends Controller
             $waAdmin = '62' . substr($waAdmin, 1);
         }
         $program = $registration->program_choice;
-        $dorm = $registration->dormitory_choice ? 'Santri Mukim (Asrama)' : 'Santri Non-Mukim (Reguler)';
+        $dorm = $registration->dormitory_choice ? 'Siswa/i Asrama' : 'Siswa/i Reguler';
         $waText = "Assalamu'alaikum Panitia PPDB MA Darun Najah Sambikarto,\n\n"
-            . "Saya telah mengisi formulir pendaftaran santri baru online dengan data:\n"
+            . "Saya telah mengisi formulir pendaftaran siswa/i baru online dengan data:\n"
             . "• No. Registrasi: {$registration->registration_number}\n"
-            . "• Nama Santri: {$registration->full_name}\n"
+            . "• Nama Calon Siswa/i: {$registration->full_name}\n"
             . "• Asal Sekolah: {$registration->school_origin}\n"
             . "• Pilihan Program: {$program}\n"
             . "• Status Asrama: {$dorm}\n"
@@ -153,7 +153,7 @@ class PpdbRegistrationController extends Controller
 
             foreach ($registrations as $reg) {
                 $gender = $reg->gender === 'L' ? 'Laki-laki' : 'Perempuan';
-                $dorm = $reg->dormitory_choice ? 'Santri Mukim (Asrama)' : 'Santri Non-Mukim (Reguler)';
+                $dorm = $reg->dormitory_choice ? 'Siswa/i Asrama' : 'Siswa/i Reguler';
                 $status = match($reg->status) {
                     'accepted' => 'Diterima',
                     'verified' => 'Berkas Terverifikasi',

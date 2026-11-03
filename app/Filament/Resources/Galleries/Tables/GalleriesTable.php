@@ -64,7 +64,7 @@ class GalleriesTable
                         'ibadah' => 'Kajian & Ibadah',
                         'sarana' => 'Gedung & Sarana',
                         'ekskul' => 'Ekskul & Olahraga',
-                        'prestasi' => 'Prestasi Santri',
+                        'prestasi' => 'Prestasi Siswa/i',
                     ]),
 
                 SelectFilter::make('is_published')

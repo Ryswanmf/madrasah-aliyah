@@ -24,9 +24,9 @@ class CurriculumForm
                 Select::make('type')
                     ->label('Tipe / Jenis Kurikulum')
                     ->options([
-                        'pilar' => '4 Pilar Utama Kurikulum (Kemenag, Pesantren, Tahfidz, Vokasi)',
+                        'pilar' => '4 Pilar Utama Kurikulum (Kemenag, Madrasah, Tahfidz, Vokasi)',
                         'kitab' => 'Kitab Turats Salafiyah (Kajian Kitab Kuning)',
-                        'vokasi' => 'Vokasi & Keterampilan Santri',
+                        'vokasi' => 'Vokasi & Keterampilan Siswa/i',
                         'program_unggulan' => 'Program Unggulan Lainnya',
                     ])
                     ->default('kitab')
@@ -70,7 +70,7 @@ class CurriculumForm
 
                 Textarea::make('description')
                     ->label('Deskripsi / Silabus Ringkas')
-                    ->placeholder('Uraian singkat materi, fokus kajian, dan target pemahaman santri...')
+                    ->placeholder('Uraian singkat materi, fokus kajian, dan target pemahaman siswa/i...')
                     ->rows(3)
                     ->columnSpanFull(),
 

@@ -79,7 +79,7 @@ class HistoriesTable
                     ->label('Filter Tipe Konten')
                     ->options([
                         'milestone' => 'Fase Tonggak Sejarah',
-                        'tokoh' => 'Tokoh & Pengasuh',
+                        'tokoh' => 'Tokoh & Dewan Guru',
                         'narasi' => 'Kilas Narasi Utama',
                     ]),
             ])

@@ -91,7 +91,7 @@
     @empty
     <div class="absolute inset-0 z-0">
       <img src="{{ function_exists('webp_asset') ? webp_asset('assets/images/gallery-1.jpg') : asset('assets/images/gallery-1.jpg') }}" 
-           alt="Santri MA Darun Najah" 
+           alt="Siswa/i MA Darun Najah" 
            loading="eager" fetchpriority="high"
            class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/95 via-emerald-950/85 to-emerald-900/60 sm:via-emerald-950/80"></div>
@@ -223,23 +223,23 @@
           @endforelse
         </div>
 
-        <!-- Right Side: Sambutan Pengasuh -->
+        <!-- Right Side: Sambutan Kepala Madrasah / Guru -->
         <div class="lg:col-span-5 flex justify-center">
           <div class="relative w-full max-w-sm sm:max-w-md bg-emerald-900/90 backdrop-blur-md rounded-2xl border-t-4 border-amber-400 border-x border-b border-emerald-700/60 shadow-2xl p-5 sm:p-6 text-left">
             
             <!-- Header Card Sambutan -->
             <div class="flex items-center gap-4 pb-4 border-b border-emerald-800/80">
               @if(!empty($setting->leader_image_url))
-                <img src="{{ $setting->leader_image_url }}" alt="{{ $setting->leader_name ?? 'Pengasuh' }}" loading="lazy" decoding="async" class="w-12 h-12 rounded-xl object-cover border border-amber-400 shadow-md shrink-0">
+                <img src="{{ $setting->leader_image_url }}" alt="{{ $setting->leader_name ?? 'Kepala Madrasah' }}" loading="lazy" decoding="async" class="w-12 h-12 rounded-xl object-cover border border-amber-400 shadow-md shrink-0">
               @else
                 <div class="w-12 h-12 bg-emerald-950 border border-amber-400 rounded-xl text-amber-400 flex items-center justify-center font-bold text-xl shrink-0 shadow-md">
-                  <i class="fa-solid fa-mosque"></i>
+                  <i class="fa-solid fa-graduation-cap"></i>
                 </div>
               @endif
               <div>
-                <span class="text-[10px] font-bold uppercase tracking-widest text-amber-300 block">{{ $setting->welcome_badge ?? 'Sambutan Pengasuh' }}</span>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-amber-300 block">{{ $setting->welcome_badge ?? 'Sambutan Kepala Madrasah' }}</span>
                 <h3 class="text-sm sm:text-base font-bold text-white leading-snug">
-                  {{ $setting->welcome_title ?? 'Pondok Pesantren Darun Najah' }}
+                  {{ $setting->welcome_title ?? 'Madrasah Aliyah Darun Najah' }}
                 </h3>
                 <p class="text-[11px] text-emerald-300">{{ $setting->welcome_subtitle ?? 'Sambikarto, Sekampung, Lampung Timur' }}</p>
               </div>
@@ -249,11 +249,11 @@
             <div class="py-4 space-y-2">
               <div class="text-amber-400 text-xl font-serif">“</div>
               <p class="text-xs sm:text-sm text-emerald-100 leading-relaxed italic -mt-3">
-                {{ $setting->welcome_quote ?? 'Assalamu’alaikum Warahmatullahi Wabarakatuh. Selamat datang di madrasah kami. MA Darun Najah berkomitmen mendidik tunas bangsa yang berakidah kokoh, berilmu amaliah, mandiri, serta berkhidmat kepada agama dan masyarakat.' }}
+                {{ $setting->welcome_quote ?? 'Assalamu’alaikum Warahmatullahi Wabarakatuh. Selamat datang di portal resmi Madrasah Aliyah Darun Najah Sambikarto. Kami berkomitmen menyelenggarakan pendidikan menengah Islam formal yang unggul secara akademis, berwawasan sains teknologi, dan berakhlakul karimah guna membekali peserta didik menuju masa depan gemilang.' }}
               </p>
               <div class="pt-2">
-                <p class="text-xs font-bold text-amber-300">{{ $setting->leader_name ?? 'KH. Sahlan Abdulloh & KH. Abdul Ghofar, S.Pd.I' }}</p>
-                <p class="text-[11px] text-emerald-300">{{ $setting->leader_role ?? 'Pengasuh Pondok Pesantren' }}</p>
+                <p class="text-xs font-bold text-amber-300">{{ $setting->leader_name ?? 'H. Masruri, S.Pd.I, M.Pd.' }}</p>
+                <p class="text-[11px] text-emerald-300">{{ $setting->leader_role ?? 'Kepala Madrasah Aliyah' }}</p>
               </div>
             </div>
 
@@ -296,65 +296,65 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
         <!-- Card 1 -->
-        <a href="{{ $setting->quick_card_1_url ?: route('ppdb') }}" 
+        <a href="{{ $setting?->quick_card_1_url ?: route('ppdb') }}" 
            class="group p-4 bg-emerald-900/60 hover:bg-emerald-900 border-t-2 border-amber-400 border-x border-b border-emerald-800/80 rounded-xl transition-all duration-300 flex items-center gap-3.5 shadow-sm hover:shadow-md hover:-translate-y-0.5">
           <div class="w-11 h-11 bg-amber-500 text-emerald-950 border border-amber-300 rounded-lg flex items-center justify-center text-lg font-bold shadow-sm shrink-0 group-hover:scale-105 transition-transform">
-            <i class="{{ $setting->quick_card_1_icon ?: 'fa-solid fa-graduation-cap' }}"></i>
+            <i class="{{ $setting?->quick_card_1_icon ?: 'fa-solid fa-graduation-cap' }}"></i>
           </div>
           <div>
             <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-amber-300 transition-colors uppercase tracking-wider">
-              {{ $setting->quick_card_1_title ?: 'PPDB Online 2026' }}
+              {{ $setting?->quick_card_1_title ?: 'PPDB Online 2026' }}
             </h4>
             <p class="text-xs text-emerald-300/90 mt-0.5">
-              {{ $setting->quick_card_1_desc ?: 'Pendaftaran & Cek Status' }}
+              {{ $setting?->quick_card_1_desc ?: 'Pendaftaran & Cek Status' }}
             </p>
           </div>
         </a>
 
         <!-- Card 2 -->
-        <a href="{{ $setting->quick_card_2_url ?: '#kurikulum' }}" 
+        <a href="{{ $setting?->quick_card_2_url ?: '#kurikulum' }}" 
            class="group p-4 bg-emerald-900/60 hover:bg-emerald-900 border-t-2 border-emerald-400 border-x border-b border-emerald-800/80 rounded-xl transition-all duration-300 flex items-center gap-3.5 shadow-sm hover:shadow-md hover:-translate-y-0.5">
           <div class="w-11 h-11 bg-emerald-600 text-white border border-emerald-400 rounded-lg flex items-center justify-center text-lg font-bold shadow-sm shrink-0 group-hover:scale-105 transition-transform">
-            <i class="{{ $setting->quick_card_2_icon ?: 'fa-solid fa-book-open' }}"></i>
+            <i class="{{ $setting?->quick_card_2_icon ?: 'fa-solid fa-book-open' }}"></i>
           </div>
           <div>
             <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-amber-300 transition-colors uppercase tracking-wider">
-              {{ $setting->quick_card_2_title ?: 'Kurikulum Terpadu' }}
+              {{ $setting?->quick_card_2_title ?: 'Kurikulum Terpadu' }}
             </h4>
             <p class="text-xs text-emerald-300/90 mt-0.5">
-              {{ $setting->quick_card_2_desc ?: 'Kemenag RI & Kitab Kuning' }}
+              {{ $setting?->quick_card_2_desc ?: 'Kemenag RI & Kitab Kuning' }}
             </p>
           </div>
         </a>
 
         <!-- Card 3 -->
-        <a href="{{ $setting->quick_card_3_url ?: '#fasilitas' }}" 
+        <a href="{{ $setting?->quick_card_3_url ?: '#fasilitas' }}" 
            class="group p-4 bg-emerald-900/60 hover:bg-emerald-900 border-t-2 border-sky-400 border-x border-b border-emerald-800/80 rounded-xl transition-all duration-300 flex items-center gap-3.5 shadow-sm hover:shadow-md hover:-translate-y-0.5">
           <div class="w-11 h-11 bg-sky-600 text-white border border-sky-400 rounded-lg flex items-center justify-center text-lg font-bold shadow-sm shrink-0 group-hover:scale-105 transition-transform">
-            <i class="{{ $setting->quick_card_3_icon ?: 'fa-solid fa-building-columns' }}"></i>
+            <i class="{{ $setting?->quick_card_3_icon ?: 'fa-solid fa-building-columns' }}"></i>
           </div>
           <div>
             <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-amber-300 transition-colors uppercase tracking-wider">
-              {{ $setting->quick_card_3_title ?: 'Sarana & Asrama' }}
+              {{ $setting?->quick_card_3_title ?: 'Sarana & Asrama' }}
             </h4>
             <p class="text-xs text-emerald-300/90 mt-0.5">
-              {{ $setting->quick_card_3_desc ?: 'Gedung & Komplek Mukim' }}
+              {{ $setting?->quick_card_3_desc ?: 'Gedung & Komplek Mukim' }}
             </p>
           </div>
         </a>
 
         <!-- Card 4 -->
-        <a href="{{ $setting->quick_card_4_url ?: '#berita' }}" 
+        <a href="{{ $setting?->quick_card_4_url ?: '#berita' }}" 
            class="group p-4 bg-emerald-900/60 hover:bg-emerald-900 border-t-2 border-amber-500 border-x border-b border-emerald-800/80 rounded-xl transition-all duration-300 flex items-center gap-3.5 shadow-sm hover:shadow-md hover:-translate-y-0.5">
           <div class="w-11 h-11 bg-amber-600 text-white border border-amber-400 rounded-lg flex items-center justify-center text-lg font-bold shadow-sm shrink-0 group-hover:scale-105 transition-transform">
-            <i class="{{ $setting->quick_card_4_icon ?: 'fa-solid fa-newspaper' }}"></i>
+            <i class="{{ $setting?->quick_card_4_icon ?: 'fa-solid fa-newspaper' }}"></i>
           </div>
           <div>
             <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-amber-300 transition-colors uppercase tracking-wider">
-              {{ $setting->quick_card_4_title ?: 'Warta & Berita' }}
+              {{ $setting?->quick_card_4_title ?: 'Warta & Berita' }}
             </h4>
             <p class="text-xs text-emerald-300/90 mt-0.5">
-              {{ $setting->quick_card_4_desc ?: 'Prestasi & Agenda Madrasah' }}
+              {{ $setting?->quick_card_4_desc ?: 'Prestasi & Agenda Madrasah' }}
             </p>
           </div>
         </a>

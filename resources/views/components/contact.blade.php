@@ -100,7 +100,7 @@
           <div class="relative w-full aspect-16/11 bg-slate-100 rounded-lg overflow-hidden">
             <iframe 
               title="Peta Lokasi MA Darun Najah Sambikarto"
-              src="{{ $contact?->maps_embed_url ?: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15891.127821614049!2d105.3400!3d-5.1500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDknMDAuMCJTIDEwNcKwMjAnMjQuMCJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid' }}" 
+              src="{{ $contact?->maps_embed_url ?: 'https://maps.google.com/maps?q=Jl.+Raya+Bumi+Agung,+Desa+Sambikarto,+Kecamatan+Sekampung,+Kabupaten+Lampung+Timur,+Lampung+34182&t=&z=15&ie=UTF8&iwloc=&output=embed' }}" 
               class="w-full h-full border-0" 
               allowfullscreen="" 
               loading="lazy" 
@@ -108,8 +108,8 @@
             </iframe>
           </div>
           <div class="p-3 bg-slate-50 border-t border-slate-200 mt-2 flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-2">
-            <span class="text-slate-600 font-medium">MA Darun Najah Sambikarto, Sekampung, Lampung Timur</span>
-            <a href="{{ $contact?->maps_link ?: 'https://maps.google.com/?q=MA+Darun+Najah+Sambikarto' }}" target="_blank" rel="noopener noreferrer" 
+            <span class="text-slate-600 font-medium">Madrasah Aliyah Darun Najah • Sambikarto, Sekampung, Lampung Timur</span>
+            <a href="{{ $contact?->maps_link ?: 'https://maps.google.com/?q=Jl.+Raya+Bumi+Agung,+Desa+Sambikarto,+Kecamatan+Sekampung,+Kabupaten+Lampung+Timur,+Lampung+34182' }}" target="_blank" rel="noopener noreferrer" 
                class="text-emerald-800 font-bold hover:text-emerald-950 flex items-center gap-1 uppercase tracking-wider">
               <span>Buka di Google Maps</span>
               <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>

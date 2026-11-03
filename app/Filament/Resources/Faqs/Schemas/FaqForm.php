@@ -16,15 +16,15 @@ class FaqForm
             ->components([
                 TextInput::make('question')
                     ->label('Pertanyaan (Question)')
-                    ->placeholder('Contoh: Kapan pendaftaran santri baru (PPDB) dibuka dan bagaimana cara daftarnya?')
+                    ->placeholder('Contoh: Kapan pendaftaran siswa/i baru (PPDB) dibuka dan bagaimana cara daftarnya?')
                     ->required()
                     ->columnSpanFull(),
 
                 Select::make('category')
                     ->label('Kategori Tanya Jawab')
                     ->options([
-                        'ppdb' => 'PPDB & Pendaftaran Santri Baru',
-                        'pesantren' => 'Asrama & Kehidupan Pesantren',
+                        'ppdb' => 'PPDB & Pendaftaran Siswa/i Baru',
+                        'pesantren' => 'Asrama & Kehidupan Madrasah',
                         'akademik' => 'Kurikulum, Kitab & Legalitas Ijazah',
                         'biaya' => 'Biaya Pendidikan & Beasiswa',
                         'umum' => 'Informasi Umum Madrasah',

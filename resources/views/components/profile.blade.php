@@ -5,9 +5,9 @@
   $missions = !empty($setting?->mission) 
     ? array_values(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $setting->mission))))
     : [
-        'Menyelenggarakan kurikulum Kemenag dan pesantren secara integral.',
-        'Membudayakan akhlakul karimah dan ibadah yaumiyyah santri.',
-        'Membekali santri keterampilan vokasi dan kemandirian praktis.'
+        'Menyelenggarakan kurikulum Kementerian Agama RI dan penguatan karakter islami secara terpadu.',
+        'Membina kedisiplinan, akhlakul karimah, dan literasi sains-teknologi siswa.',
+        'Membekali peserta didik dengan keterampilan vokasi dan kemandirian praktis.'
       ];
 @endphp
 
@@ -24,10 +24,10 @@
         <span>Tentang Lembaga</span>
       </div>
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-        {{ $setting->profile_title ?? 'Mengenal Lebih Dekat MA Darun Najah Sambikarto' }}
+        {{ $setting->profile_title ?? 'Mengenal Lebih Dekat Madrasah Aliyah Darun Najah' }}
       </h2>
       <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-        Berkhidmat dalam dunia pendidikan Islam, dakwah, dan pembinaan akhlak mulia sejak dirintis di bawah naungan Yayasan Pondok Pesantren Darun Najah.
+        Berkhidmat menyelenggarakan pendidikan formal tingkat menengah atas yang memadukan kurikulum Kementerian Agama Republik Indonesia, keunggulan akademik, dan nilai-nilai akhlakul karimah.
       </p>
     </div>
 
@@ -52,25 +52,25 @@
             <!-- Bottom Soft Overlay Bar -->
             <div class="absolute inset-x-0 bottom-0 bg-emerald-950/90 border-t-2 border-amber-400 p-4 text-white">
               <span class="text-[10px] font-bold uppercase tracking-widest text-amber-300 block">
-                Yayasan Pondok Pesantren Darun Najah
+                Madrasah Aliyah Darun Najah
               </span>
-              <p class="text-sm font-bold mt-0.5">Pendidikan Holistik Berbasis Nilai Pesantren</p>
+              <p class="text-sm font-bold mt-0.5">Pendidikan Menengah Islam Formal Terakreditasi</p>
             </div>
           </div>
         </div>
 
-        <!-- Tokoh Pendiri / Pengasuh -->
+        <!-- Kepala Madrasah & Pimpinan Lembaga -->
         <div class="bg-slate-50 border-l-4 border-emerald-700 border-y border-r border-slate-200 p-5 rounded-xl shadow-sm">
           <div class="flex items-start gap-4">
             <div class="w-12 h-12 bg-emerald-900 text-amber-400 border border-amber-400/50 rounded-lg flex items-center justify-center font-bold text-xl shrink-0 shadow-sm">
-              <i class="fa-solid fa-mosque"></i>
+              <i class="fa-solid fa-graduation-cap"></i>
             </div>
             <div>
               <span class="text-[10px] font-bold tracking-widest text-emerald-800 uppercase block">
-                Pengasuh Pondok Pesantren
+                {{ $setting->leader_role ?? 'Kepala Madrasah Aliyah' }}
               </span>
               <h3 class="text-sm sm:text-base font-bold text-slate-900 mt-0.5">
-                {{ $setting->leader_name ?? 'KH. Sahlan Abdulloh & KH. Abdul Ghofar, S.Pd.I' }}
+                {{ $setting->leader_name ?? 'H. Masruri, S.Pd.I, M.Pd.' }}
               </h3>
               <p class="text-xs text-slate-600 mt-1 flex items-center gap-1.5 font-medium">
                 <i class="fa-solid fa-user-tie text-amber-600"></i>
@@ -88,7 +88,7 @@
           </div>
           <div class="bg-emerald-950 text-white p-3.5 border-l-2 border-emerald-400 rounded-lg shadow-sm">
             <span class="text-[10px] uppercase tracking-wider text-emerald-300 block font-semibold">Naungan Resmi</span>
-            <strong class="text-sm font-bold">LP Ma'arif NU</strong>
+            <strong class="text-sm font-bold">Kementerian Agama RI</strong>
           </div>
         </div>
 
@@ -172,7 +172,7 @@
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-emerald-600 transition-colors">
               <i class="{{ $setting->pillar_4_icon ?: 'fa-solid fa-hand-holding-hand' }} text-emerald-700 text-lg mb-1 block"></i>
               <strong class="text-xs font-bold text-slate-900 block">{{ $setting->pillar_4_title ?: 'Kemandirian' }}</strong>
-              <span class="text-[10px] text-slate-500">{{ $setting->pillar_4_desc ?: 'Life Skills Santri' }}</span>
+              <span class="text-[10px] text-slate-500">{{ $setting->pillar_4_desc ?: 'Life Skills Siswa/i' }}</span>
             </div>
           </div>
 
@@ -196,7 +196,7 @@
       <div class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 text-white rounded-2xl p-6 sm:p-10 shadow-xl border-t-4 border-amber-400">
         <div class="text-center max-w-2xl mx-auto mb-8">
           <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block">Data & Angka Madrasah</span>
-          <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-1">Kiprah Nyata Pendidikan & Pembinaan Santri</h3>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-1">Kiprah Nyata Pendidikan & Pembinaan Siswa/i</h3>
         </div>
         
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -206,7 +206,7 @@
               {{ $setting->stat_students_count ?: '350+' }}
             </div>
             <div class="text-xs sm:text-sm font-semibold text-white mt-1">
-              {{ $setting->stat_students_label ?: 'Santri Mukim & Reguler' }}
+              {{ $setting->stat_students_label ?: 'Siswa/i Asrama & Reguler' }}
             </div>
           </div>
 

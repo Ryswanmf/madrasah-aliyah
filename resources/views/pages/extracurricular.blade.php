@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ekstrakurikuler & Pengembangan Bakat Santri • MA Darun Najah Sambikarto')
+@section('title', 'Ekstrakurikuler & Pengembangan Bakat Siswa/i • Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- Extracurricular Page Container -->
@@ -26,7 +26,7 @@
           <span>Beranda</span>
         </a>
         <span class="text-emerald-700">/</span>
-        <span class="text-amber-300">Ekstrakulikuler Santri</span>
+        <span class="text-amber-300">Ekstrakulikuler Siswa/i</span>
       </nav>
 
       <!-- Header Content -->
@@ -36,10 +36,10 @@
           <span>Pengembangan Bakat, Seni & Kepemimpinan</span>
         </div>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-          Ekstrakurikuler & <span class="text-amber-400">Potensi Santri</span>
+          Ekstrakurikuler & <span class="text-amber-400">Potensi Siswa/i</span>
         </h1>
         <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-          Wadah menyalurkan minat, mengasah kecakapan kepemimpinan, melestarikan seni budaya Islam, membina ketangguhan fisik bela diri, dan membekali kemandirian santri MA Darun Najah Sambikarto.
+          Wadah menyalurkan minat, mengasah kecakapan kepemimpinan, melestarikan seni budaya Islam, membina ketangguhan fisik bela diri, dan membekali kemandirian siswa/i MA Darun Najah Sambikarto.
         </p>
       </div>
 
@@ -211,13 +211,13 @@
       <div class="mt-16 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
         <div class="max-w-2xl mb-8">
           <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">
-            Prestasi Santri
+            Prestasi Siswa/i
           </span>
           <h3 class="text-2xl font-extrabold text-slate-900 mt-3">
             Jejak Kejuaraan & Prestasi Ekstrakurikuler
           </h3>
           <p class="text-xs sm:text-sm text-slate-500 mt-1">
-            Santri MA Darun Najah Sambikarto aktif menorehkan prestasi di berbagai kompetisi seni Islam, olahraga, dan kepanduan.
+            Siswa/i MA Darun Najah Sambikarto aktif menorehkan prestasi di berbagai kompetisi seni Islam, olahraga, dan kepanduan.
           </p>
         </div>
 
@@ -240,7 +240,7 @@
             <div>
               <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700">Juara 2 Kaligrafi</span>
               <h4 class="font-bold text-sm text-slate-900 mt-0.5">MTQ Pelajar Antar-Madrasah</h4>
-              <p class="text-xs text-slate-500 mt-1">Cabang Khat Naskhi dan Kontemporer santri MA berhasil lolos seleksi hingga tingkat provinsi.</p>
+              <p class="text-xs text-slate-500 mt-1">Cabang Khat Naskhi dan Kontemporer siswa/i MA berhasil lolos seleksi hingga tingkat provinsi.</p>
             </div>
           </div>
 
@@ -267,13 +267,13 @@
           <div class="max-w-xl">
             <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-wider rounded-md mb-3 border border-amber-400/30">
               <i class="fa-solid fa-graduation-cap"></i>
-              <span>Penerimaan Santri Baru (PPDB)</span>
+              <span>Penerimaan Siswa/i Baru (PPDB)</span>
             </div>
             <h3 class="text-xl sm:text-2xl font-extrabold text-white">
               Siap Menyalurkan Minat & Meraih Prestasi Bersama Kami?
             </h3>
             <p class="mt-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-              Daftarkan putra-putri Anda di MA Darun Najah Sambikarto sekarang juga secara online. Kembangkan bakat seni, olahraga, dan kepemimpinan dalam lingkungan santri yang religius dan asri.
+              Daftarkan putra-putri Anda di MA Darun Najah Sambikarto sekarang juga secara online. Kembangkan bakat seni, olahraga, dan kepemimpinan dalam lingkungan madrasah yang religius dan asri.
             </p>
           </div>
 

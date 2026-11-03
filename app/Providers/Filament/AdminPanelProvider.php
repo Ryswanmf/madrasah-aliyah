@@ -28,7 +28,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('MA Darun Najah')
+            ->brandName('Madrasah Aliyah Darun Najah')
             ->brandLogo(asset('assets/images/logo.png'))
             ->brandLogoHeight('2.5rem')
             ->favicon(asset('assets/images/logo.png'))

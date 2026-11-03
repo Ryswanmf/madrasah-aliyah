@@ -25,13 +25,13 @@ class HomeSettingForm
                             ->schema([
                                 TextInput::make('site_name')
                                     ->label('Nama Lembaga / Brand')
-                                    ->default('PPDN Darun Najah')
+                                    ->default('Madrasah Aliyah Darun Najah')
                                     ->required()
                                     ->columnSpan(1),
 
                                 TextInput::make('site_tagline')
                                     ->label('Tagline Lembaga')
-                                    ->default('Madrasah Aliyah • Sambikarto, Sekampung')
+                                    ->default('Sambikarto, Sekampung, Lampung Timur')
                                     ->columnSpan(1),
 
                                 TextInput::make('foundation_head')
@@ -54,7 +54,7 @@ class HomeSettingForm
                                     ->columnSpan(1),
                             ]),
 
-                        // TAB 2: TICKER & SAMBUTAN PENGASUH
+                        // TAB 2: TICKER & SAMBUTAN KEPALA MADRASAH / GURU
                         Tab::make('Ticker & Sambutan')
                             ->icon('heroicon-o-megaphone')
                             ->schema([
@@ -71,12 +71,12 @@ class HomeSettingForm
 
                                 TextInput::make('welcome_badge')
                                     ->label('Badge Sambutan')
-                                    ->default('Sambutan Pengasuh')
+                                    ->default('Sambutan Kepala Madrasah')
                                     ->columnSpan(1),
 
                                 TextInput::make('welcome_title')
                                     ->label('Judul Sambutan')
-                                    ->default('Pondok Pesantren Darun Najah')
+                                    ->default('Madrasah Aliyah Darun Najah')
                                     ->required()
                                     ->columnSpan(1),
 
@@ -91,17 +91,17 @@ class HomeSettingForm
                                     ->columnSpanFull(),
 
                                 TextInput::make('leader_name')
-                                    ->label('Nama Pengasuh / Pimpinan')
+                                    ->label('Nama Kepala Madrasah / Guru Pembina')
                                     ->default('KH. Sahlan Abdulloh & KH. Abdul Ghofar, S.Pd.I')
                                     ->columnSpan(1),
 
                                 TextInput::make('leader_role')
                                     ->label('Jabatan Pimpinan')
-                                    ->default('Pengasuh Pondok Pesantren')
+                                    ->default('Kepala Madrasah')
                                     ->columnSpan(1),
 
                                 FileUpload::make('leader_image')
-                                    ->label('Foto Pengasuh / Pimpinan')
+                                    ->label('Foto Kepala Madrasah / Guru Pembina')
                                     ->directory('home-settings')
                                     ->image()
                                     ->imageEditor()
@@ -124,7 +124,7 @@ class HomeSettingForm
 
                                 TextInput::make('badge_stat_2')
                                     ->label('Badge Karakteristik 2')
-                                    ->default('Santri Mukim & Non-Mukim')
+                                    ->default('Siswa/i Asrama & Reguler')
                                     ->columnSpan(1),
 
                                 TextInput::make('badge_stat_3')
@@ -169,7 +169,7 @@ class HomeSettingForm
 
                                 Textarea::make('mission')
                                     ->label('Misi Madrasah (Satu Misi per Baris)')
-                                    ->placeholder("Menyelenggarakan kurikulum Kemenag dan pesantren secara integral.\nMembudayakan akhlakul karimah dan ibadah yaumiyyah santri.\nMembekali santri keterampilan vokasi dan kemandirian praktis.")
+                                    ->placeholder("Menyelenggarakan kurikulum Kemenag dan keislaman secara integral.\nMembudayakan akhlakul karimah dan ibadah yaumiyyah siswa/i.\nMembekali siswa/i keterampilan vokasi dan kemandirian praktis.")
                                     ->rows(4)
                                     ->columnSpanFull(),
                             ]),
@@ -191,7 +191,7 @@ class HomeSettingForm
                                 TextInput::make('pillar_3_icon')->label('Pilar 3: Icon FontAwesome')->default('fa-solid fa-microscope')->columnSpan(1),
 
                                 TextInput::make('pillar_4_title')->label('Pilar 4: Judul')->default('Kemandirian')->columnSpan(1),
-                                TextInput::make('pillar_4_desc')->label('Pilar 4: Uraian')->default('Life Skills Santri')->columnSpan(1),
+                                TextInput::make('pillar_4_desc')->label('Pilar 4: Uraian')->default('Life Skills Siswa/i')->columnSpan(1),
                                 TextInput::make('pillar_4_icon')->label('Pilar 4: Icon FontAwesome')->default('fa-solid fa-hand-holding-hand')->columnSpan(1),
                             ]),
 
@@ -204,8 +204,8 @@ class HomeSettingForm
                                     ->default(true)
                                     ->columnSpanFull(),
 
-                                TextInput::make('stat_students_count')->label('Jumlah Santri')->default('350+')->columnSpan(1),
-                                TextInput::make('stat_students_label')->label('Label Santri')->default('Santri Mukim & Reguler')->columnSpan(1),
+                                TextInput::make('stat_students_count')->label('Jumlah Siswa/i')->default('350+')->columnSpan(1),
+                                TextInput::make('stat_students_label')->label('Label Siswa/i')->default('Siswa/i Asrama & Reguler')->columnSpan(1),
 
                                 TextInput::make('stat_teachers_count')->label('Jumlah Asatidz/Guru')->default('28')->columnSpan(1),
                                 TextInput::make('stat_teachers_label')->label('Label Guru')->default('Dewan Asatidz & Guru')->columnSpan(1),

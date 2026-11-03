@@ -32,7 +32,7 @@ class PpdbRegistrationsTable
                     ->color('primary'),
 
                 TextColumn::make('full_name')
-                    ->label('Nama Calon Santri')
+                    ->label('Nama Calon Siswa/i')
                     ->searchable()
                     ->sortable()
                     ->weight('bold'),
@@ -125,8 +125,8 @@ class PpdbRegistrationsTable
 
                 TernaryFilter::make('dormitory_choice')
                     ->label('Status Asrama')
-                    ->trueLabel('Santri Mukim (Mondok)')
-                    ->falseLabel('Santri Non-Mukim (Reguler)'),
+                    ->trueLabel('Siswa/i Asrama (Bermukim)')
+                    ->falseLabel('Siswa/i Reguler (Non-Asrama)'),
             ])
             ->headerActions([
                 Action::make('export_csv')
@@ -171,7 +171,7 @@ class PpdbRegistrationsTable
                     }),
 
                 Action::make('accept')
-                    ->label('Terima Santri')
+                    ->label('Terima Siswa/i')
                     ->icon(Heroicon::OutlinedCheckCircle)
                     ->color('success')
                     ->visible(fn ($record) => in_array($record->status, ['pending', 'verified']))
@@ -179,8 +179,8 @@ class PpdbRegistrationsTable
                     ->action(function ($record) {
                         $record->update(['status' => 'accepted']);
                         Notification::make()
-                            ->title('Santri Diterima!')
-                            ->body("{$record->full_name} dinyatakan Diterima sebagai santri baru.")
+                            ->title('Siswa/i Diterima!')
+                            ->body("{$record->full_name} dinyatakan Diterima sebagai siswa/i baru.")
                             ->success()
                             ->send();
                     }),

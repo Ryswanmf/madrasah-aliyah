@@ -25,7 +25,7 @@
         Galeri Aktivitas <span class="text-emerald-700">Madrasah</span>
       </h2>
       <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-        Potret kebersamaan santri, suasana pembelajaran interaktif, pengajian kitab salaf, dan dinamika kehidupan santri di MA Darun Najah Sambikarto.
+        Potret kebersamaan siswa/i, suasana pembelajaran interaktif, kajian keislaman, dan dinamika kegiatan siswa/i di Madrasah Aliyah Darun Najah.
       </p>
     </div>
 
@@ -54,12 +54,12 @@
       @else
         <!-- Fallback 8 static items -->
         @foreach([
-          ['assets/images/gallery-1.jpg', 'Aktivitas Belajar Santri', 'Kegiatan'],
-          ['assets/images/gallery-2.jpg', 'Kebersamaan Santri', 'Santri'],
+          ['assets/images/gallery-1.jpg', 'Aktivitas Belajar Siswa/i', 'Kegiatan'],
+          ['assets/images/gallery-2.jpg', 'Kebersamaan Siswa/i', 'Siswa/i'],
           ['assets/images/gallery-3.jpg', 'Kajian Kitab Kuning', 'Bimbingan'],
-          ['assets/images/gallery-4.jpg', 'Rutinitas Harian', 'Pesantren'],
+          ['assets/images/gallery-4.jpg', 'Rutinitas Harian', 'Madrasah'],
           ['assets/images/gedung-1.jpg', 'Gedung Utama Madrasah', 'Fasilitas'],
-          ['assets/images/gedung-2.jpg', 'Gedung Asrama Santri', 'Asrama'],
+          ['assets/images/gedung-2.jpg', 'Gedung Asrama Siswa/i', 'Asrama'],
           ['assets/images/gedung-3.jpg', 'Masjid Kampus', 'Ibadah'],
           ['assets/images/gedung-4.jpg', 'Ruang Kelas & Belajar', 'Kelas'],
         ] as $f)
@@ -88,7 +88,7 @@
         <i class="fa-solid fa-arrow-right text-amber-400"></i>
       </a>
       <p class="mt-3 text-xs text-slate-500">
-        Jelajahi seluruh dokumentasi kegiatan wisuda, ekstrakurikuler, pembiasaan ibadah, dan album foto santri.
+        Jelajahi seluruh dokumentasi kegiatan wisuda, ekstrakurikuler, pembiasaan ibadah, dan album foto siswa/i.
       </p>
     </div>
 

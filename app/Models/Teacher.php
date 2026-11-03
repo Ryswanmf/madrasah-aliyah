@@ -62,8 +62,8 @@ class Teacher extends Model
     public function getCategoryLabelAttribute(): string
     {
         return match($this->category) {
-            'pimpinan' => 'Pimpinan & Pengasuh',
-            'asatidz_kitab' => 'Dewan Asatidz Pesantren',
+            'pimpinan' => 'Pimpinan & Guru Pembina',
+            'asatidz_kitab' => 'Dewan Guru Keagamaan & Kitab',
             'guru_mapel' => 'Guru Mata Pelajaran',
             'staf' => 'Tenaga Kependidikan & TU',
             default => ucfirst(str_replace('_', ' ', $this->category)),

@@ -59,7 +59,7 @@ class Facility extends Model
     {
         return match ($this->category) {
             'akademik' => 'Gedung & Kelas',
-            'asrama' => 'Asrama Santri',
+            'asrama' => 'Asrama Siswa/i',
             'ibadah' => 'Masjid & Religi',
             'olahraga' => 'Sarana Olahraga',
             'penunjang' => 'Laboratorium & TIK',

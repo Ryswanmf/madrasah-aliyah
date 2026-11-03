@@ -23,7 +23,7 @@ class TestimonialForm
 
                 TextInput::make('role')
                     ->label('Profesi / Keterangan')
-                    ->placeholder('Contoh: Alumni 2022 • Mahasiswa UIN Raden Intan / Wali Santri Kelas XI')
+                    ->placeholder('Contoh: Alumni 2022 • Mahasiswa UIN Raden Intan / Wali Murid Kelas XI')
                     ->required()
                     ->columnSpan(1),
 
@@ -31,8 +31,8 @@ class TestimonialForm
                     ->label('Kategori')
                     ->options([
                         'alumni' => 'Alumni Madrasah',
-                        'wali_santri' => 'Wali Santri',
-                        'santri' => 'Santri Aktif',
+                        'wali_santri' => 'Wali Murid',
+                        'santri' => 'Siswa/i Aktif',
                         'tokoh' => 'Tokoh Masyarakat',
                     ])
                     ->default('alumni')

@@ -25,7 +25,7 @@ class HistoryForm
                     ->label('Kategori / Tipe Data')
                     ->options([
                         'milestone' => 'Fase / Tonggak Sejarah (Timeline)',
-                        'tokoh' => 'Tokoh & Pengasuh Lembaga (Profil Masyayikh)',
+                        'tokoh' => 'Tokoh & Dewan Guru (Profil Tokoh Madrasah)',
                         'narasi' => 'Kilas Narasi Utama (Latar Belakang)',
                     ])
                     ->default('milestone')

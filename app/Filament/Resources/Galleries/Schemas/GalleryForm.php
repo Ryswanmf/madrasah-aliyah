@@ -17,7 +17,7 @@ class GalleryForm
             ->components([
                 TextInput::make('title')
                     ->label('Judul / Keterangan Foto')
-                    ->placeholder('Contoh: Aktivitas Santri dan Pembelajaran Kelas')
+                    ->placeholder('Contoh: Aktivitas Siswa/i dan Pembelajaran Kelas')
                     ->required()
                     ->columnSpanFull(),
 
@@ -28,7 +28,7 @@ class GalleryForm
                         'ibadah' => 'Kajian & Ibadah',
                         'sarana' => 'Gedung & Sarana',
                         'ekskul' => 'Ekskul & Olahraga',
-                        'prestasi' => 'Prestasi Santri',
+                        'prestasi' => 'Prestasi Siswa/i',
                     ])
                     ->default('kegiatan')
                     ->required()
@@ -39,7 +39,7 @@ class GalleryForm
                             'ibadah' => 'Kajian & Ibadah',
                             'sarana' => 'Gedung & Sarana',
                             'ekskul' => 'Ekskul & Olahraga',
-                            'prestasi' => 'Prestasi Santri',
+                            'prestasi' => 'Prestasi Siswa/i',
                         ];
                         $set('category_label', $labels[$state] ?? 'Dokumentasi');
                     })

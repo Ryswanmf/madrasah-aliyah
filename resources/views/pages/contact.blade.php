@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Kontak, Lokasi Kampus & Sekretariat Resmi • MA Darun Najah Sambikarto')
+@section('title', 'Kontak, Lokasi Kampus & Sekretariat Resmi • Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- Contact Page Container -->
@@ -48,7 +48,7 @@
           Kontak & Lokasi <span class="text-amber-400">Madrasah</span>
         </h1>
         <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-          Kami siap melayani kebutuhan informasi seputar pendaftaran santri baru (PPDB), kurikulum kepesantrenan, kunjungan orang tua/wali santri, serta kerja sama kelembagaan.
+          Kami siap melayani kebutuhan informasi seputar pendaftaran siswa/i baru (PPDB), kurikulum madrasah, kunjungan orang tua / wali murid, serta kerja sama kelembagaan.
         </p>
       </div>
 
@@ -107,7 +107,7 @@
           </div>
           <h3 class="font-bold text-slate-900 text-sm uppercase tracking-wider">Surat & Korespondensi</h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-2 break-all font-mono">
-            {{ $contact->email ?? 'madarunnajah.sambikarto@gmail.com' }}
+            {{ $contact->email ?? 'mudarunnajah60@gmail.com' }}
           </p>
         </div>
 
@@ -217,8 +217,8 @@
               <select id="subject" 
                       name="subject" 
                       class="w-full text-sm bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 focus:bg-white focus:outline-none focus:border-emerald-700 transition-all">
-                <option value="Informasi PPDB 2026/2027" {{ old('subject') === 'Informasi PPDB 2026/2027' ? 'selected' : '' }}>Informasi Pendaftaran Santri Baru (PPDB)</option>
-                <option value="Kurikulum & Kepesantrenan" {{ old('subject') === 'Kurikulum & Kepesantrenan' ? 'selected' : '' }}>Kurikulum & Kegiatan Pondok Pesantren</option>
+                <option value="Informasi PPDB 2026/2027" {{ old('subject') === 'Informasi PPDB 2026/2027' ? 'selected' : '' }}>Informasi Pendaftaran Siswa Baru (PPDB)</option>
+                <option value="Kurikulum & Program Madrasah" {{ old('subject') === 'Kurikulum & Program Madrasah' ? 'selected' : '' }}>Kurikulum & Program Keagamaan Madrasah</option>
                 <option value="Administrasi & Surat Menyurat" {{ old('subject') === 'Administrasi & Surat Menyurat' ? 'selected' : '' }}>Administrasi & Surat Menyurat</option>
                 <option value="Kunjungan Lembaga" {{ old('subject') === 'Kunjungan Lembaga' ? 'selected' : '' }}>Kunjungan Tamu / Silaturahmi Lembaga</option>
                 <option value="Lainnya" {{ old('subject') === 'Lainnya' ? 'selected' : '' }}>Pertanyaan Umum Lainnya</option>
@@ -270,8 +270,8 @@
           <div class="bg-white p-3.5 border border-slate-200 rounded-2xl shadow-sm">
             <div class="relative w-full aspect-16/10 bg-slate-100 rounded-xl overflow-hidden border border-slate-200">
               <iframe 
-                title="Peta Lokasi Kampus MA Darun Najah Sambikarto"
-                src="{{ $contact?->maps_embed_url ?: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15891.127821614049!2d105.3400!3d-5.1500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDknMDAuMCJTIDEwNcKwMjAnMjQuMCJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid' }}" 
+                title="Peta Lokasi Kampus Madrasah Aliyah Darun Najah"
+                src="{{ $contact?->maps_embed_url ?: 'https://maps.google.com/maps?q=Jl.+Raya+Bumi+Agung,+Desa+Sambikarto,+Kecamatan+Sekampung,+Kabupaten+Lampung+Timur,+Lampung+34182&t=&z=15&ie=UTF8&iwloc=&output=embed' }}" 
                 class="w-full h-full border-0" 
                 allowfullscreen="" 
                 loading="lazy" 
@@ -281,10 +281,10 @@
 
             <div class="p-4 bg-slate-50 border-t border-slate-200 mt-2 flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-3">
               <div>
-                <span class="font-bold text-slate-800 block">MA Darun Najah Sambikarto</span>
-                <span class="text-slate-500">Sekampung, Kabupaten Lampung Timur, Lampung</span>
+                <span class="font-bold text-slate-800 block">Madrasah Aliyah Darun Najah</span>
+                <span class="text-slate-500">Jl. Raya Bumi Agung, Desa Sambikarto, Sekampung, Lampung Timur</span>
               </div>
-              <a href="{{ $contact?->maps_link ?: 'https://maps.google.com/?q=MA+Darun+Najah+Sambikarto' }}" target="_blank" rel="noopener noreferrer" 
+              <a href="{{ $contact?->maps_link ?: 'https://maps.google.com/?q=Jl.+Raya+Bumi+Agung,+Desa+Sambikarto,+Kecamatan+Sekampung,+Kabupaten+Lampung+Timur,+Lampung+34182' }}" target="_blank" rel="noopener noreferrer" 
                  class="inline-flex items-center gap-1.5 px-4 py-2 bg-emerald-800 hover:bg-emerald-900 text-white font-bold rounded-lg shadow-sm transition-colors uppercase tracking-wider shrink-0">
                 <span>Buka di Google Maps</span>
                 <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-amber-400"></i>
@@ -301,7 +301,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-600">
               <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
                 <strong class="text-emerald-900 block font-bold mb-1">Dari Arah Kota Metro:</strong>
-                Ambil rute Jalan Raya Metro – Sekampung, menuju Desa Sambikarto. Lokasi madrasah berada di kawasan Jl. Raya Bumi Agung dekat komplek pondok pesantren.
+                Ambil rute Jalan Raya Metro – Sekampung, menuju Desa Sambikarto. Lokasi madrasah berada di kawasan Jl. Raya Bumi Agung kompleks Madrasah Aliyah Darun Najah.
               </div>
               <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
                 <strong class="text-emerald-900 block font-bold mb-1">Dari Arah Sukadana / Way Jepara:</strong>
@@ -361,13 +361,13 @@
               <p class="text-xs text-slate-500 mt-2">Kebijakan kelembagaan, kemitraan sekolah, dan pengembangan yayasan.</p>
             </div>
             <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-              <h4 class="font-bold text-sm text-slate-900">Pengasuh Pesantren</h4>
+              <h4 class="font-bold text-sm text-slate-900">Bimbingan Keagamaan & Asrama</h4>
               <p class="text-xs text-emerald-800 font-semibold mt-0.5">KH. Sahlan Abdulloh & KH. Abdul Ghofar, S.Pd.I</p>
-              <p class="text-xs text-slate-500 mt-2">Bimbingan santri mukim, kajian kitab salaf, dan spiritual pesantren.</p>
+              <p class="text-xs text-slate-500 mt-2">Bimbingan keislaman siswa/i asrama, kajian kitab, dan pembinaan karakter.</p>
             </div>
             <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
               <h4 class="font-bold text-sm text-slate-900">Sekretariat PPDB</h4>
-              <p class="text-xs text-emerald-800 font-semibold mt-0.5">Panitia Penerimaan Santri Baru</p>
+              <p class="text-xs text-emerald-800 font-semibold mt-0.5">Panitia Penerimaan Siswa/i Baru</p>
               <p class="text-xs text-slate-500 mt-2">Pendaftaran online, validasi berkas formulir, dan konfirmasi beasiswa.</p>
             </div>
           @endforelse
@@ -390,7 +390,7 @@
               Punya Pertanyaan yang Sering Diajukan?
             </h3>
             <p class="mt-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-              Kunjungi halaman Tanya Jawab (FAQ) kami untuk membaca jawaban seputar biaya pendidikan, aturan handphone santri, rutinitas asrama, dan status akreditasi madrasah.
+              Kunjungi halaman Tanya Jawab (FAQ) kami untuk membaca jawaban seputar biaya pendidikan, aturan handphone siswa/i, tata tertib madrasah, dan status akreditasi.
             </p>
           </div>
 

@@ -56,7 +56,7 @@ class PpdbSetting extends Model
             return [
                 'Fotokopi Ijazah / SKL SMP/MTs (legalisir 2 lembar)',
                 'Fotokopi Kartu Keluarga (KK) & KTP Orang Tua',
-                'Fotokopi Akta Kelahiran calon santri',
+                'Fotokopi Akta Kelahiran calon siswa/i',
                 'Pas foto ukuran 3x4 (4 lembar, latar biru/merah)',
                 'Fotokopi KIP / PKH / Piagam Prestasi (jika memiliki)',
             ];

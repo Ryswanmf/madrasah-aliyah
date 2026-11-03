@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Sarana & Prasarana Lengkap • MA Darun Najah Sambikarto')
+@section('title', 'Sarana & Prasarana Lengkap • Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- Facilities Page Container -->
@@ -51,7 +51,7 @@
           Sarana & Prasarana <span class="text-amber-400">Lengkap</span>
         </h1>
         <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-          MA Darun Najah Sambikarto menyediakan fasilitas belajar, beribadah, hunian asrama santri mukim, dan sarana olahraga yang asri, bersih, dan representatif guna mendukung prestasi dan tumbuh kembang santri.
+          MA Darun Najah Sambikarto menyediakan fasilitas belajar, beribadah, fasilitas asrama siswa/i, dan sarana olahraga yang asri, bersih, dan representatif guna mendukung prestasi dan tumbuh kembang siswa/i.
         </p>
       </div>
 
@@ -80,7 +80,7 @@
           <a href="{{ route('fasilitas', ['kategori' => 'asrama']) }}" 
              class="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all flex items-center gap-2 {{ ($currentCategory ?? '') === 'asrama' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium' }}">
             <i class="fa-solid fa-hotel"></i>
-            <span>Asrama Santri</span>
+            <span>Asrama Siswa/i</span>
           </a>
 
           <a href="{{ route('fasilitas', ['kategori' => 'ibadah']) }}" 
@@ -266,7 +266,7 @@
               <i class="fa-solid fa-droplet"></i>
             </div>
             <h4 class="font-bold text-sm text-slate-900">Air Bersih Alami</h4>
-            <p class="text-xs text-slate-500 mt-1">Sumber air tanah melimpah dan higienis untuk wudhu dan MCK santri mukim.</p>
+            <p class="text-xs text-slate-500 mt-1">Sumber air tanah melimpah dan higienis untuk wudhu dan MCK siswa/i asrama.</p>
           </div>
 
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
@@ -282,7 +282,7 @@
               <i class="fa-solid fa-user-shield"></i>
             </div>
             <h4 class="font-bold text-sm text-slate-900">Bimbingan 24 Jam</h4>
-            <p class="text-xs text-slate-500 mt-1">Santri dibersamai asatidz dan pengasuh dalam setiap rutinitas keseharian.</p>
+            <p class="text-xs text-slate-500 mt-1">Siswa/i didampingi guru pembina dalam setiap rutinitas keseharian.</p>
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
           <div class="max-w-xl">
             <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-wider rounded-md mb-3 border border-amber-400/30">
               <i class="fa-solid fa-graduation-cap"></i>
-              <span>Penerimaan Santri Baru (PPDB)</span>
+              <span>Penerimaan Siswa/i Baru (PPDB)</span>
             </div>
             <h3 class="text-xl sm:text-2xl font-extrabold text-white">
               Tertarik Belajar & Tinggal di Kampus Darun Najah?
@@ -314,7 +314,7 @@
               <span>Daftar PPDB Online</span>
             </a>
 
-            <a href="https://wa.me/6285658973426?text=Assalamu'alaikum%20Admin%20MA%20Darun%20Najah,%20saya%20ingin%20bertanya%20seputar%20fasilitas%20dan%20asrama%20santri." 
+            <a href="https://wa.me/6285658973426?text=Assalamu'alaikum%20Admin%20MA%20Darun%20Najah,%20saya%20ingin%20bertanya%20seputar%20fasilitas%20dan%20asrama%20siswa." 
                target="_blank" 
                rel="noopener noreferrer" 
                class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-lg bg-emerald-900/90 hover:bg-emerald-800 text-white font-semibold text-xs uppercase tracking-wider border border-emerald-700/80 transition-all duration-200">
@@ -359,7 +359,7 @@
           <p x-text="activeTitle" class="font-bold text-sm sm:text-base text-white"></p>
           <span class="text-xs text-amber-300 font-mono uppercase tracking-wider flex items-center gap-1.5 shrink-0 ml-4">
             <i class="fa-solid fa-building-columns"></i>
-            <span>MA Darun Najah</span>
+            <span>Madrasah Aliyah Darun Najah</span>
           </span>
         </div>
         <p x-show="activeDesc" x-text="activeDesc" class="mt-1 text-xs text-slate-300 leading-relaxed"></p>

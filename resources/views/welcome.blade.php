@@ -16,7 +16,7 @@
   <!-- 5. Ekstrakurikuler (Dinamis) -->
   <x-extracurricular />
 
-  <!-- 5. Deretan Prestasi & Kejuaraan Santri (Dinamis) -->
+  <!-- 5. Deretan Prestasi & Kejuaraan Siswa/i (Dinamis) -->
   <x-achievements :achievements="$featuredAchievements ?? null" />
 
   <!-- 6. Fasilitas Madrasah (Dinamis) -->
@@ -28,7 +28,7 @@
   <!-- 8. Berita & Informasi Terkini (Khusus Berita Unggulan) -->
   <x-news :featuredNews="$featuredNews ?? null" />
 
-  <!-- 9. Suara Alumni & Testimoni Wali Santri (Dinamis) -->
+  <!-- 9. Suara Alumni & Testimoni Orang Tua / Wali Murid (Dinamis) -->
   <x-testimonials :testimonials="$featuredTestimonials ?? null" />
 
   <!-- 10. Penerimaan Peserta Didik Baru (PPDB Online Dinamis) -->

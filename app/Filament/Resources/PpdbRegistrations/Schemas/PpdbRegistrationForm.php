@@ -34,7 +34,7 @@ class PpdbRegistrationForm
                     ->columnSpan(1),
 
                 TextInput::make('full_name')
-                    ->label('Nama Lengkap Santri')
+                    ->label('Nama Lengkap Siswa/i')
                     ->required()
                     ->columnSpan(2),
 
@@ -46,8 +46,8 @@ class PpdbRegistrationForm
                 Select::make('gender')
                     ->label('Jenis Kelamin')
                     ->options([
-                        'L' => 'Laki-laki (Santri Putra)',
-                        'P' => 'Perempuan (Santri Putri)',
+                        'L' => 'Laki-laki (Siswa)',
+                        'P' => 'Perempuan (Siswi)',
                     ])
                     ->default('L')
                     ->required()

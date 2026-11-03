@@ -22,7 +22,7 @@ class AchievementForm
                     ->columnSpanFull(),
 
                 TextInput::make('student_name')
-                    ->label('Nama Santri / Tim Peraih')
+                    ->label('Nama Siswa/i / Tim Peraih')
                     ->placeholder('Contoh: Grup Hadroh Ash-Shofwah / Ahmad Fauzi')
                     ->required()
                     ->columnSpan(1),

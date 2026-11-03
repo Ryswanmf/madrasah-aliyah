@@ -8,18 +8,18 @@
       <!-- Col 1: Identity (5 cols) -->
       <div class="lg:col-span-5 space-y-4">
         <div class="flex items-center gap-3">
-          <img src="{{ !empty($siteSetting?->site_logo) ? $siteSetting->site_logo_url : (function_exists('webp_asset') ? webp_asset('assets/images/logo.png') : asset('assets/images/logo.png')) }}" alt="Logo {{ $siteSetting->site_name ?? 'MA Darun Najah' }}" loading="lazy" decoding="async" class="w-12 h-12 object-contain">
+          <img src="{{ !empty($siteSetting?->site_logo) ? $siteSetting->site_logo_url : (function_exists('webp_asset') ? webp_asset('assets/images/logo.png') : asset('assets/images/logo.png')) }}" alt="Logo {{ $siteSetting->site_name ?? 'Madrasah Aliyah Darun Najah' }}" loading="lazy" decoding="async" class="w-12 h-12 object-contain">
           <div>
-            <h3 class="text-white font-extrabold text-lg tracking-tight">{{ $siteSetting->site_name ?? 'PPDN Darun Najah' }}</h3>
-            <p class="text-amber-400 text-xs font-semibold">{{ $siteSetting->site_tagline ?? 'Madrasah Aliyah • Sambikarto, Sekampung' }}</p>
+            <h3 class="text-white font-extrabold text-lg tracking-tight">{{ $siteSetting->site_name ?? 'Madrasah Aliyah Darun Najah' }}</h3>
+            <p class="text-amber-400 text-xs font-semibold">{{ $siteSetting->site_tagline ?? 'Sambikarto, Sekampung, Lampung Timur' }}</p>
           </div>
         </div>
         <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
-          Pendidikan menengah Islam terakreditasi di bawah naungan LP Ma'arif NU. Mengedepankan integritas moral, kedalaman ilmu agama salafiyah, dan kemandirian santri.
+          Pendidikan menengah Islam terakreditasi di bawah naungan Kementerian Agama Republik Indonesia. Mengedepankan integritas moral, keunggulan akademik, dan nilai-nilai akhlakul karimah.
         </p>
         <div class="pt-2 text-xs text-slate-400 space-y-1">
+          <p><span class="text-slate-200 font-semibold">Kepala Madrasah:</span> {{ $siteSetting->leader_name ?? 'H. Masruri, S.Pd.I, M.Pd.' }}</p>
           <p><span class="text-slate-200 font-semibold">Ketua Yayasan:</span> {{ $siteSetting->foundation_head ?? 'Suparno, S.Pd.I' }}</p>
-          <p><span class="text-slate-200 font-semibold">Pengasuh:</span> {{ $siteSetting->leader_name ?? 'KH. Sahlan Abdulloh & KH. Abdul Ghofar, S.Pd.I' }}</p>
         </div>
 
         <!-- Social Media Icons (Soft Rounded) -->
@@ -73,7 +73,7 @@
           <div class="pt-2">
             <a href="{{ route('ppdb') }}" class="inline-flex items-center gap-2 bg-emerald-800 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg transition-all border-b-2 border-emerald-950 hover:-translate-y-0.5 shadow-sm">
               <i class="fa-solid fa-graduation-cap text-amber-400"></i>
-              <span>Daftar Santri Baru (Online)</span>
+              <span>Daftar Siswa Baru (PPDB)</span>
             </a>
           </div>
         </div>
@@ -86,7 +86,7 @@
       
       <!-- Copyright & Support By -->
       <div class="text-center md:text-left space-y-1">
-        <p>&copy; 2026 Madrasah Aliyah Darun Najah Sambikarto. Hak Cipta Dilindungi.</p>
+        <p>&copy; 2026 Madrasah Aliyah Darun Najah. Hak Cipta Dilindungi.</p>
         <p class="inline-flex items-center gap-1.5 text-slate-300">
           <i class="fa-solid fa-laptop-code text-amber-400"></i>
           <span>Support By</span>

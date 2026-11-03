@@ -23,11 +23,11 @@ class AchievementResource extends Resource
 
     protected static UnitEnum|string|null $navigationGroup = 'Kesiswaan & Prestasi';
 
-    protected static ?string $navigationLabel = 'Prestasi Santri';
+    protected static ?string $navigationLabel = 'Prestasi Siswa/i';
 
     protected static ?string $modelLabel = 'Prestasi';
 
-    protected static ?string $pluralModelLabel = 'Data Prestasi Santri';
+    protected static ?string $pluralModelLabel = 'Data Prestasi Siswa/i';
 
     protected static ?int $navigationSort = 2;
 

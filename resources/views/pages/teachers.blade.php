@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Dewan Guru, Asatidz & Tenaga Kependidikan • MA Darun Najah Sambikarto')
+@section('title', 'Dewan Guru & Tenaga Kependidikan • Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- Teachers Directory Page Container -->
@@ -26,7 +26,7 @@
           <span>Beranda</span>
         </a>
         <span class="text-emerald-700">/</span>
-        <span class="text-amber-300">Dewan Guru & Asatidz</span>
+        <span class="text-amber-300">Dewan Guru & Tenaga Pendidik</span>
       </nav>
 
       <!-- Header Content -->
@@ -36,10 +36,10 @@
           <span>Tenaga Pendidik Berdedikasi</span>
         </div>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-          Direktori Dewan Guru & <span class="text-amber-400">Asatidz</span>
+          Direktori Dewan Guru & <span class="text-amber-400">Tenaga Pendidik</span>
         </h1>
         <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-          Mengenal para kyai, asatidz pengampu kitab salafiyah, dewan guru mata pelajaran, serta tenaga kependidikan MA Darun Najah Sambikarto yang siap membina akhlak dan potensi akademik para santri.
+          Mengenal kepala madrasah, dewan guru mata pelajaran, pengajar keagamaan, serta tenaga kependidikan MA Darun Najah Sambikarto yang siap membina akhlak dan potensi akademik para siswa.
         </p>
       </div>
 
@@ -68,7 +68,7 @@
           <a href="{{ route('guru', ['kategori' => 'pimpinan']) }}" 
              class="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all flex items-center gap-2 {{ ($currentCategory ?? '') === 'pimpinan' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium' }}">
             <i class="fa-solid fa-star-and-crescent"></i>
-            <span>Pimpinan & Pengasuh</span>
+            <span>Pimpinan Madrasah</span>
             <span class="ml-1 text-[10px] px-1.5 py-0.2 rounded-full {{ ($currentCategory ?? '') === 'pimpinan' ? 'bg-amber-400 text-emerald-950 font-extrabold' : 'bg-slate-100 text-slate-600' }}">
               {{ $categoriesCount['pimpinan'] ?? 0 }}
             </span>
@@ -78,7 +78,7 @@
           <a href="{{ route('guru', ['kategori' => 'asatidz_kitab']) }}" 
              class="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border text-xs uppercase tracking-wider transition-all flex items-center gap-2 {{ ($currentCategory ?? '') === 'asatidz_kitab' ? 'bg-emerald-900 text-amber-300 border-amber-400 font-bold shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200 font-medium' }}">
             <i class="fa-solid fa-book-quran"></i>
-            <span>Dewan Asatidz Pesantren</span>
+            <span>Guru Keagamaan & Kitab</span>
             <span class="ml-1 text-[10px] px-1.5 py-0.2 rounded-full {{ ($currentCategory ?? '') === 'asatidz_kitab' ? 'bg-amber-400 text-emerald-950 font-extrabold' : 'bg-slate-100 text-slate-600' }}">
               {{ $categoriesCount['asatidz_kitab'] ?? 0 }}
             </span>
@@ -251,9 +251,9 @@
             <i class="fa-solid fa-graduation-cap"></i>
             <span>Bergabunglah Bersama Kami</span>
           </div>
-          <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Daftarkan Putra-Putri Anda di MA Darun Najah</h3>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Daftarkan Putra-Putri Anda di Madrasah Aliyah Darun Najah</h3>
           <p class="mt-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-            Dapatkan pendidikan terpadu ilmu agama salafiyah dan kurikulum madrasah formal di bawah bimbingan langsung para kyai dan asatidz berpengalaman.
+            Dapatkan pendidikan Islam unggul yang memadukan kurikulum Kementerian Agama dan nilai-nilai keislaman di bawah bimbingan dewan guru berpengalaman.
           </p>
         </div>
         <div class="shrink-0 flex flex-wrap gap-3">

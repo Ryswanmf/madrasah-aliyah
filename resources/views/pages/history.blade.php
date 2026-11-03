@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Sejarah Berdirinya & Profil Lembaga • MA Darun Najah Sambikarto')
+@section('title', 'Sejarah Berdirinya & Profil Lembaga • Madrasah Aliyah Darun Najah')
 
 @section('content')
 <!-- History & Profile Page Container -->
@@ -39,7 +39,7 @@
           Sejarah Berdirinya & <span class="text-amber-400">Profil Lembaga</span>
         </h1>
         <p class="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-          Menapaki jejak khidmat dakwah, perjuangan para ulama perintis, serta komitmen luhur mencetak generasi santri yang menguasai ilmu agama salaf dan ilmu pengetahuan modern di Sambikarto, Sekampung, Lampung Timur.
+          Menapaki jejak khidmat dakwah, perjuangan para ulama perintis, serta komitmen luhur mencetak generasi siswa/i yang menguasai ilmu agama dan ilmu pengetahuan modern di Sambikarto, Sekampung, Lampung Timur.
         </p>
       </div>
 
@@ -63,8 +63,8 @@
                    loading="lazy" decoding="async"
                    class="w-full aspect-4/3 object-cover">
               <div class="absolute inset-x-0 bottom-0 bg-emerald-950/90 border-t-2 border-amber-400 p-4 text-white">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-amber-300 block">{{ $narrative?->badge ?? 'Pondok Pesantren Darun Najah' }}</span>
-                <p class="text-xs sm:text-sm font-bold mt-0.5">Pusat Kaderisasi Ulama & Cendekiawan Muslim</p>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-amber-300 block">{{ $narrative?->badge ?? 'Madrasah Aliyah Darun Najah' }}</span>
+                <p class="text-xs sm:text-sm font-bold mt-0.5">Pendidikan Menengah Islam Formal Terakreditasi</p>
               </div>
             </div>
           </div>
@@ -100,10 +100,10 @@
                 Berdirinya <strong>Madrasah Aliyah (MA) Darun Najah Sambikarto</strong> berakar dari kepedulian mendalam para kiai, ulama, dan tokoh masyarakat di Kecamatan Sekampung, Kabupaten Lampung Timur, terhadap ketersediaan lembaga pendidikan formal tingkat menengah atas yang berlandaskan akidah <em>Ahlussunnah wal Jama'ah An-Nahdliyyah</em>.
               </p>
               <p>
-                Sebelum madrasah formal didirikan, aktivitas pendidikan bermula dari majelis ta'lim dan pengajian kitab kuning tradisional yang diasuh oleh <strong>KH. Sahlan Abdulloh</strong> dan <strong>KH. Abdul Ghofar, S.Pd.I</strong>. Seiring berjalannya waktu, animo masyarakat untuk menyekolahkan putra-putri mereka di madrasah yang memiliki asrama pondok pesantren semakin tinggi.
+                Sebelum madrasah formal didirikan, aktivitas pendidikan bermula dari majelis ta'lim dan pengajian kitab kuning tradisional yang diasuh oleh <strong>KH. Sahlan Abdulloh</strong> dan <strong>KH. Abdul Ghofar, S.Pd.I</strong>. Seiring berjalannya waktu, animo masyarakat untuk menyekolahkan putra-putri mereka di madrasah aliyah formal yang memiliki fasilitas asrama semakin tinggi.
               </p>
               <p>
-                Atas inisiatif para sesepuh bersama Yayasan Pondok Pesantren Darun Najah di bawah kepemimpinan <strong>Suparno, S.Pd.I</strong>, didirikanlah unit formal Madrasah Aliyah di bawah naungan <strong>LP Ma'arif NU</strong> dan Kementerian Agama Republik Indonesia. Integrasi antara kurikulum nasional dan sistem pesantren salaf menjadi ciri khas utama yang terus dijaga hingga kini.
+                Atas inisiatif para sesepuh bersama Yayasan Darun Najah di bawah kepemimpinan <strong>Suparno, S.Pd.I</strong>, didirikanlah unit formal Madrasah Aliyah di bawah naungan <strong>Kementerian Agama Republik Indonesia</strong>. Integrasi antara kurikulum nasional Kemenag dan penguatan keilmuan Islam menjadi ciri khas utama yang terus dijaga hingga kini.
               </p>
             @endif
           </div>
@@ -168,7 +168,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600">Fase Perintisan</span>
               <h4 class="font-bold text-sm text-slate-900 mt-1">Majelis & Pengajian Salaf</h4>
               <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                Bermula dari halaqoh pengajian kitab kuning, pembinaan amaliah ibadah masyarakat, dan santri mukim angkatan pertama.
+                Bermula dari halaqoh keagamaan, pembinaan amaliah ibadah masyarakat, dan siswa/i angkatan pertama.
               </p>
             </div>
             <div class="pt-3 border-t border-slate-200 mt-4 text-[11px] text-slate-400 font-mono">
@@ -185,7 +185,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600">Fase Pelembagaan</span>
               <h4 class="font-bold text-sm text-slate-900 mt-1">Pendirian Madrasah Aliyah</h4>
               <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                Resmi memperoleh izin operasional Kementerian Agama dan berafiliasi penuh dengan LP Ma'arif NU Kabupaten Lampung Timur.
+                Resmi memperoleh izin operasional dan legalitas kelembagaan dari Kementerian Agama Republik Indonesia.
               </p>
             </div>
             <div class="pt-3 border-t border-slate-200 mt-4 text-[11px] text-slate-400 font-mono">
@@ -219,7 +219,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600">Fase Modernisasi</span>
               <h4 class="font-bold text-sm text-slate-900 mt-1">Akreditasi & Kemandirian TIK</h4>
               <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                Terakreditasi BAN-SM, pelaksanaan CBT/ANBK mandiri, program beasiswa tahfidz Qur'an, dan pembekalan vokasi santri mandiri.
+                Terakreditasi BAN-SM, pelaksanaan CBT/ANBK mandiri, program beasiswa tahfidz Qur'an, dan pembekalan vokasi siswa/i mandiri.
               </p>
             </div>
             <div class="pt-3 border-t border-slate-200 mt-4 text-[11px] text-slate-400 font-mono">
@@ -231,7 +231,7 @@
         </div>
       </div>
 
-      <!-- 4. Pimpinan & Pengasuh Lembaga -->
+      <!-- 4. Pimpinan & Dewan Guru Lembaga -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         @forelse($figures ?? [] as $fig)
         @php
@@ -256,7 +256,7 @@
               <div>
                 <span class="text-xs font-bold uppercase tracking-wider {{ $badgeText }}">{{ $fig->period ?: 'Tokoh Lembaga' }}</span>
                 <h3 class="text-lg font-bold text-slate-900 mt-1">{{ $fig->title }}</h3>
-                <p class="text-xs text-slate-500 mt-0.5">{{ $fig->badge ?: 'Pondok Pesantren Darun Najah' }}</p>
+                <p class="text-xs text-slate-500 mt-0.5">{{ $fig->badge ?: 'Madrasah Aliyah Darun Najah' }}</p>
               </div>
             </div>
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -270,24 +270,41 @@
           @endif
         </div>
         @empty
-        <!-- Fallback Tokoh 1: Pengasuh -->
+        <!-- Fallback Tokoh 1: Kepala Madrasah -->
+        <div class="bg-white border-t-4 border-emerald-600 border-x border-b border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-14 h-14 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center text-2xl font-bold border border-emerald-200 shrink-0">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-800">Kepala Madrasah Aliyah</span>
+              <h3 class="text-lg font-bold text-slate-900 mt-1">H. Masruri, S.Pd.I, M.Pd.</h3>
+              <p class="text-xs text-slate-500 mt-0.5">Kepemimpinan Akademik & Manajerial Madrasah</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Memimpin operasional kurikulum Kementerian Agama RI, peningkatan mutu pedagogik dewan guru, prestasi akademik siswa, dan tata kelola kelembagaan Madrasah Aliyah Darun Najah.
+          </p>
+        </div>
+
+        <!-- Fallback Tokoh 2: Pembina Keagamaan -->
         <div class="bg-white border-t-4 border-emerald-600 border-x border-b border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
           <div class="flex items-start gap-4 mb-4">
             <div class="w-14 h-14 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center text-2xl font-bold border border-emerald-200 shrink-0">
               <i class="fa-solid fa-hands-praying"></i>
             </div>
             <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-emerald-800">Pengasuh Pondok Pesantren</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-800">Pembina Keagamaan Madrasah</span>
               <h3 class="text-lg font-bold text-slate-900 mt-1">KH. Sahlan Abdulloh & KH. Abdul Ghofar, S.Pd.I</h3>
-              <p class="text-xs text-slate-500 mt-0.5">Masyayikh & Pembimbing Ruhani Santri</p>
+              <p class="text-xs text-slate-500 mt-0.5">Masyayikh & Dewan Pembina Nilai Keislaman</p>
             </div>
           </div>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Berperan sentral dalam menjaga sanad keilmuan Islam Ahlussunnah wal Jama'ah, keteladanan akhlak para santri, serta pengawasan kegiatan ibadah yaumiyyah di lingkungan asrama mukim 24 jam.
+            Berperan sentral dalam menjaga sanad keilmuan Islam Ahlussunnah wal Jama'ah, keteladanan akhlak para siswa, serta pembinaan nilai-nilai keagamaan di lingkungan madrasah.
           </p>
         </div>
 
-        <!-- Fallback Tokoh 2: Ketua Yayasan -->
+        <!-- Fallback Tokoh 3: Ketua Yayasan -->
         <div class="bg-white border-t-4 border-amber-500 border-x border-b border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
           <div class="flex items-start gap-4 mb-4">
             <div class="w-14 h-14 bg-amber-100 text-amber-800 rounded-xl flex items-center justify-center text-2xl font-bold border border-amber-200 shrink-0">
@@ -296,11 +313,11 @@
             <div>
               <span class="text-xs font-bold uppercase tracking-wider text-amber-800">Ketua Yayasan</span>
               <h3 class="text-lg font-bold text-slate-900 mt-1">Suparno, S.Pd.I</h3>
-              <p class="text-xs text-slate-500 mt-0.5">Yayasan Pondok Pesantren Darun Najah Sambikarto</p>
+              <p class="text-xs text-slate-500 mt-0.5">Yayasan Darun Najah Sambikarto</p>
             </div>
           </div>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Memimpin arah kebijakan strategis yayasan, pengembangan infrastruktur fisik, kemitraan lembaga dengan pemerintah dan masyarakat, serta penjaminan mutu tata kelola pendidikan.
+            Memimpin arah kebijakan strategis yayasan, fasilitasi infrastruktur fisik gedung, kemitraan lembaga dengan pemerintah dan masyarakat, serta penjaminan mutu tata kelola pendidikan.
           </p>
         </div>
         @endforelse
@@ -322,7 +339,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
           <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg">
             <span class="text-slate-400 block font-semibold uppercase text-[10px]">Nama Lembaga</span>
-            <strong class="text-slate-900 text-sm mt-0.5 block">MA Darun Najah Sambikarto</strong>
+            <strong class="text-slate-900 text-sm mt-0.5 block">Madrasah Aliyah Darun Najah</strong>
           </div>
 
           <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg">
@@ -332,12 +349,12 @@
 
           <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg">
             <span class="text-slate-400 block font-semibold uppercase text-[10px]">Badan Penyelenggara</span>
-            <strong class="text-slate-900 text-sm mt-0.5 block">Yayasan Pondok Pesantren Darun Najah</strong>
+            <strong class="text-slate-900 text-sm mt-0.5 block">Yayasan Darun Najah Sambikarto</strong>
           </div>
 
           <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg">
             <span class="text-slate-400 block font-semibold uppercase text-[10px]">Naungan Kelembagaan</span>
-            <strong class="text-slate-900 text-sm mt-0.5 block">LP Ma'arif NU & Kemenag RI</strong>
+            <strong class="text-slate-900 text-sm mt-0.5 block">Kementerian Agama RI (Kemenag)</strong>
           </div>
 
           <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg">
@@ -362,13 +379,13 @@
           <div class="max-w-xl">
             <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-wider rounded-md mb-3 border border-amber-400/30">
               <i class="fa-solid fa-graduation-cap"></i>
-              <span>Penerimaan Santri Baru (PPDB)</span>
+              <span>Penerimaan Peserta Didik Baru (PPDB)</span>
             </div>
             <h3 class="text-xl sm:text-2xl font-extrabold text-white">
               Menjadi Bagian dari Sejarah dan Perjuangan Kami
             </h3>
             <p class="mt-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-              Bergabunglah bersama keluarga besar MA Darun Najah Sambikarto. Daftarkan putra-putri Anda dalam program santri mukim maupun reguler.
+              Bergabunglah bersama keluarga besar Madrasah Aliyah Darun Najah Sambikarto. Daftarkan putra-putri Anda dengan pilihan asrama (mukim) maupun reguler.
             </p>
           </div>
 

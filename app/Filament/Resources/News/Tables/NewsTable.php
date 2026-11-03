@@ -85,7 +85,7 @@ class NewsTable
                     ->label('Kategori')
                     ->options([
                         'Pengumuman PPDB' => 'Pengumuman PPDB',
-                        'Prestasi Santri' => 'Prestasi Santri',
+                        'Prestasi Siswa/i' => 'Prestasi Siswa/i',
                         'Kepesantrenan' => 'Kepesantrenan',
                         'Vokasi & TIK' => 'Vokasi & TIK',
                         'Warta Madrasah' => 'Warta Madrasah',

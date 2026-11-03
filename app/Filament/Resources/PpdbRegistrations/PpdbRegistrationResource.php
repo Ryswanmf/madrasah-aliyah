@@ -27,7 +27,7 @@ class PpdbRegistrationResource extends Resource
 
     protected static ?string $navigationLabel = 'Pendaftar PPDB';
 
-    protected static ?string $modelLabel = 'Pendaftar Santri';
+    protected static ?string $modelLabel = 'Pendaftar Siswa/i';
 
     protected static ?string $pluralModelLabel = 'Data Pendaftar PPDB';
 
